@@ -82,22 +82,31 @@ const slide  =(slideNum)=>{
 
 
 let start = false
-window.addEventListener('scroll',()=>{
-    let el = document.querySelector('.myCarousel')
-    var rect = el.getBoundingClientRect();
+window.addEventListener('scroll',startCarousel)
 
-    if (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
-    ){
-        start = true
-    }
-    if(start){
-        setInterval(()=>{ 
-            slideNumber= slideNumber !== 4? slideNumber + 1: 1
-            slide()
-        },6000)
-    }
-})
+
+
+
+const startCarousel =()=>{
+  
+        let el = document.querySelector('.myCarousel')
+        var rect = el.getBoundingClientRect();
+    
+        if (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+        ){
+            start = true
+        }
+        if(start){
+            
+            setInterval(()=>{ 
+                slideNumber= slideNumber !== 4? slideNumber + 1: 1
+                slide()
+            },6000)
+            window.removeEventListener('scroll',startCarousel)
+        }
+    
+}
