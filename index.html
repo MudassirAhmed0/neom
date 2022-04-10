@@ -42,7 +42,10 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" href="./assets/styles/global.css">
-  <link rel="stylesheet" href="./assets/styles/aos.css">
+    <link rel="stylesheet" href="./assets/styles/aos.css">
+
+    <link rel="stylesheet" href="./assets/styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/styles/owl.theme.default.min.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./assets/js/config.js"></script>
@@ -272,6 +275,83 @@
 
     </section>
 
+    <section>
+        <section class="bg-light">
+            <div class="myContainer pt-[110px] relative top-5 text-black">
+               <div class="flex justify-between">
+                   <h4 class="text-[40px] uppercase tracking-[8px]" data-aos-once="true" data-aos="fade-right"   data-aos-duration="700">cybersecurity news</h4>
+                   <div class="slider_nav flex gap-x-6">
+                        <img data-aos-once="true" data-aos="zoom-in"  data-aos-delay="500"  data-aos-duration="500" class="am-prev   cursor-pointer hover:opacity-[0.4] transition-all duration-300" src="./assets/images/svg/arrow-left-hand.svg" alt="">
+                        <img data-aos-once="true" data-aos="zoom-in"  data-aos-delay="700"  data-aos-duration="500" class="am-next cursor-pointer hover:opacity-[0.4] transition-all duration-300" src="./assets/images/svg/arrow-right-hand.svg" alt="">
+                   </div>
+               </div>
+               
+                <div class="owl-carousel owl-theme top-[65px] ">
+                    <div class="item relative h-[600px] rounded-[25px] overflow-hidden flex flex-col text-white justify-end ">
+                        <a  href="#" class="absolute z-[5] top-0 left-0 w-full h-full bg-[#13100d4f]">
+
+                        </a>
+                        <div class="img_container absolute top-0 left-0 w-full h-full">
+                            <img src="./assets/images/home/space based internet.jpg" alt="News">
+                        </div>
+                        <div href="#" class="flex flex-col   pb-[40px] px-[40px] relative">
+                            <span class="brown-light mb-4">October 26, 2021</span>
+                            <span class="mb-10 brown-light leading-[34px] w-[63%] text-[26px]">NEOM tech & digital holding company and oneweb sign $200M JV for satellite network</span>
+                            <a  href='#'class="text-[15px] relative z-[6] hover:text-[#ebc03f] transition-all duration-300 text-gold tracking-[3px] uppercase">Read More</a>
+                        </div>
+
+                    </div>
+                    <div class="item relative h-[600px] rounded-[25px] overflow-hidden flex flex-col text-white justify-end ">
+                        <a href="#" class="absolute z-[5] top-0 left-0 w-full h-full bg-[#13100d4f]">
+
+                        </a>
+                        <div class="img_container absolute top-0 left-0 w-full h-full">
+                            <img src="./assets/images/home/News.jpg" alt="News">
+                        </div>
+                        <div href="#" class="flex flex-col   pb-[40px] px-[40px] relative">
+                            <span class="brown-light mb-4">October 26, 2021</span>
+                            <span class="mb-10 brown-light leading-[34px] w-[63%] text-[26px]">NEOM tech & digital holding company and oneweb sign $200M JV for satellite network</span>
+                            <a  href='#'class="text-[15px] hover:text-[#ebc03f] relative z-[6] transition-all duration-300 text-gold tracking-[3px] uppercase">Read More</a>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+       
+        </section>
+        <section class="bg-gray-400 min-h-[101.5vh] flex items-end">
+            <div class="myContainer py-[130px] text-white">
+                <h4 class="text-[40px] uppercase tracking-[8px] leading-[56px]" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">We hear from you</h4>
+                <form class="mt-[74px] flex  justify-between gap-y-[55px] flex-wrap w-[59.55%]">
+                    <div class="flex flex-col gap-y-[22px] w-[47%]">
+                        <label for="deapartmentName" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Department Name <span class="text-gold brown-light">*</span></label>
+                        <input required type="text"  name="deapartmentName" id="deapartmentName" class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Department Name...">
+                    </div>
+                    <div class="flex flex-col gap-y-[22px] w-[47%]">
+                        <label for="fullName" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Full Name <span class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="fullName" id="fullName"  class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Full Name...">
+                    </div>
+                    <div class="flex flex-col gap-y-[22px] w-[47%]">
+                        <label for="mobile" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Mobile <span class="text-gold brown-light">*</span></label>
+                        <input required type="number"  name="mobile" id="mobile" class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Mobile Number...">
+                    </div>
+                    <div class="flex flex-col gap-y-[22px] w-[47%]">
+                        <label for="email" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Email <span class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="email" id="email"  class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Email...">
+                    </div>
+                    <div class="flex flex-col gap-y-[22px] w-[100%]">
+                        <label for="Summary" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Summary of Incident <span class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="Summary" id="Summary"  class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Summary...">
+                    </div>
+                    <button data-aos="fade-up" data-aos-duration="700" data-aos-once="true" class="w-[184px] bg-[#b89535] hover:bg-[#ebc03f] text-[15px] uppercase tracking-[3px] transition-all duration-300 h-[53px] rounded-[28px]">
+                            Submit
+                    </button>
+                </form>
+            </div>
+        </section>
+    </section>
+
     <footer class="bg-light h-[82px] border-t-[6px] border-gold   text-15 flex justify-center items-center ">
         <span class="brown-light">© NEOM 2021. All rights reserved. | Designed by <a href="https://brackets-tech.com/" target="_blank" class="brown-light text-gold">Brackets Technology</a></span>
     </footer>
@@ -285,6 +365,8 @@
     <script src="./assets/js/aos.js"> </script>
     <script src="./assets/js/lazy.js"></script>
     <script src="./assets/js/aosinitialize.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script> 
+    <script src="./assets/js/owlHome.js"></script>
 
 </body>
 </html>
