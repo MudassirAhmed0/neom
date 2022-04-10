@@ -82,7 +82,7 @@ const slide  =(slideNum)=>{
 
 
 let start = false
-window.addEventListener('scroll',startCarousel)
+
 
 
 
@@ -110,3 +110,5 @@ const startCarousel =()=>{
         }
     
 }
+
+window.addEventListener('scroll',startCarousel)
