@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'brown-regular';
+    src: url('../fonts/BrownMedium\ Regular.ttf');
+}
+@font-face {
+    font-family: 'brown-light';
+    src: url('../fonts/BrownLight\ Regular.ttf');
+}
+*{
+    font-family:'brown-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.brown-light{
+    font-family: 'brown-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.brown-regular{
+    font-family: 'brown-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.myContainer{
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.myContainerWithoutPadding{
+    width: 100%;
+    max-width: 1440px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.homeHeroOverlay1{
+    background: transparent linear-gradient(91deg, #13100DDE 0%, #13100D00 100%) 0% 0% no-repeat padding-box;
+}
+.homeHeroOverlay2{
+    background: var(--unnamed-color-003865) 0% 0% no-repeat padding-box;
+    background: #003865 0% 0% no-repeat padding-box;
+}
+.roundkrna{
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+}
+.gradient1{
+    background: linear-gradient(to right, #00569c  0% ,  #00569c  25%,  #bfbdb9  26%, #bfbdb9 100%);
+}
+.gradient2{
+    background: linear-gradient(to right, #00569c  0% ,  #00569c  42%,  #bfbdb9  43%, #bfbdb9 100%);
+}
+.gradient3{
+    background: linear-gradient(to right, #00569c  0% ,  #00569c  60%,  #bfbdb9  61%, #bfbdb9 100%);
+}
+.gradient4{
+    background: linear-gradient(to right, #00569c  0% ,  #00569c 100%);
+}
+.homeOverlay3{
+    opacity: 1;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+.slide-active{
+    display: flex;
+    animation: 1s fade;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.mybrandIcon{
+    /* width:1663.4px;
+ 
+    height: 1108.93px; */
+    bottom: -1080px;
+    /* left: -312px; */
+    /* transform: rotate(-11deg); */
+    transform: matrix(0.95, -0.33, 0.33, 0.95, 0, 0);
+    left: -1015px; 
+
+}
+
+.mybrandIcon img{
+ width: 100%;
+ height: 100%;
+ clip-path: polygon(0 18%, 79% 22%, 52% 100%, 0% 100%);
+opacity: 0.15;
+clip-path: polygon(0 18%, 79% 19%, 52% 100%, 0% 100%);
+transform: rotate(11deg);
+ object-fit: cover;
+}
+
+.img_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dropdown{
+    background: #13100D 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #00386533;
+    opacity: 0;
+    pointer-events: none;
+}
+.dropdownBtn:hover .dropdown{
+    opacity: 1;
+    pointer-events: initial;
+}
+.dropdownBtn:hover >span{
+    color: #b89535;
+}
+.carouselcircleBlue{
+    background-image: linear-gradient(
+  180deg,
+  hsl(207deg 100% 31%) 0%,
+  hsl(207deg 100% 31%) 10%,
+  hsl(207deg 100% 31%) 20%,
+  hsl(207deg 100% 31%) 30%,
+  hsl(207deg 100% 32%) 40%,
+  hsl(207deg 100% 32%) 50%,
+  hsl(207deg 100% 35%) 60%,
+  hsl(207deg 100% 39%) 70%,
+  hsl(207deg 100% 43%) 80%,
+  hsl(207deg 100% 46%) 90%,
+  hsl(207deg 100% 50%) 100%
+);
+}
+
+.readMoreContainer:hover .readMore{
+    max-height: 50px;
+}
+.readMoreContainer:hover > img{
+    transform: scale(1.2);
+}
+.readMore{
+    max-height: 0px;
+    transition: .4s;
+    overflow: hidden;
+}
+.readMoreContainer{
+    cursor: pointer;
+} 
+.delay-5s{
+    animation-delay: .5s;
+}
