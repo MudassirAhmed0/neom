@@ -192,7 +192,7 @@
         </div>
         <div class="myContainer text-white flex flex-col py-[205px]  z-[3] items-center relative">
             <h4  data-aos-once="true" data-aos="fade-up"   data-aos-duration="700" class="uppercase text-[40px] leading-[56px] tracking-[8px] text-center">Neom Cybersecurity Divisions</h4>
-            <p  data-aos-once="true" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="700" class="brown-light text-xl leading-[30px] text-center w-[64%] mt-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore voluptua.</p>
+            <p  data-aos-once="true" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="700" class="brown-light text-xl leading-[30px] text-center w-[64%] mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore voluptua.</p>
             <div class="w-full flex justify-between  mt-[90px]">
                 <div class="w-[21.5%] h-[200px] border-r-[0.5px] border-white flex flex-col justify-center readMoreContainer">
                     <img src="./assets/images/home/caution.svg" class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Caution">
@@ -320,10 +320,11 @@
             </div>
        
         </section>
-        <section class="bg-gray-400 min-h-[101.5vh] flex items-end">
+        <section class="bg-gray-400 min-h-[101.5vh] flex items-end relative">
+            <div id="googleMap" class="absolute top-0 left-0 w-full h-full"></div>
             <div class="myContainer py-[130px] text-white">
                 <h4 class="text-[40px] uppercase tracking-[8px] leading-[56px]" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">We hear from you</h4>
-                <form class="mt-[74px] flex  justify-between gap-y-[55px] flex-wrap w-[59.55%]">
+                <form class="relative mt-[74px] flex  justify-between gap-y-[55px] flex-wrap w-[59.55%]">
                     <div class="flex flex-col gap-y-[22px] w-[47%]">
                         <label for="deapartmentName" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Department Name <span class="text-gold brown-light">*</span></label>
                         <input required type="text"  name="deapartmentName" id="deapartmentName" class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Department Name...">
@@ -367,6 +368,108 @@
     <script src="./assets/js/aosinitialize.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script> 
     <script src="./assets/js/owlHome.js"></script>
+
+    <script>
+        function myMap() {
+           var mapProp= {
+            center:new google.maps.LatLng(24.711900,46.650435),
+             center: { lat: 24.712276, lng:46.648282},
+            zoom: 17.5,
+            disableDefaultUI: true,
+      styles: [
+        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+        { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+        { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+        {
+          featureType: "administrative.locality",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "poi",
+          elementType: "labels.text.fill",
+          stylers: [{color:'f0f'}],
+        },
+        {
+          featureType: "poi",
+          elementType: "labels",
+          stylers: [{color:'#000'}],
+        },
+        {
+          featureType: "poi.park",
+          elementType: "geometry",
+          stylers: [{ color: "#263c3f" }],
+        },
+        {
+          featureType: "poi.park",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#6b9a76" }],
+        },
+        {
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [{ color: "#38414e" }],
+        },
+        {
+          featureType: "road",
+          elementType: "geometry.stroke",
+          stylers: [{ color: "#212a37" }],
+        },
+        {
+          featureType: "road",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#9ca5b3" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry",
+          stylers: [{ color: "#746855" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry.stroke",
+          stylers: [{ color: "#1f2835" }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#f3d19c" }],
+        },
+        {
+          featureType: "transit",
+          elementType: "geometry",
+          stylers: [{ color: "#2f3948" }],
+        },
+        {
+          featureType: "transit.station",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#d59563" }],
+        },
+        {
+          featureType: "water",
+          elementType: "geometry",
+          stylers: [{ color: "#17263c" }],
+        },
+        {
+          featureType: "water",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#515c6d" }],
+        },
+        {
+          featureType: "water",
+          elementType: "labels.text.stroke",
+          stylers: [{ color: "#17263c" }],
+        },
+        
+      ],
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          
+    }
+
+        </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpU_U9dBKsILBrm4AQ9tYojZGRMWnXbME&callback=myMap"></script>
 
 </body>
 </html>

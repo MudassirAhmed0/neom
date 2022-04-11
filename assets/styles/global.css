@@ -1,10 +1,12 @@
 @font-face {
     font-family: 'brown-regular';
-    src: url('../fonts/BrownMedium\ Regular.ttf');
+    src: url('../fonts/Brown\ Pro\ Regular.otf');
+    /* src: url('../fonts/BrownMedium\ Regular.ttf'); */
 }
 @font-face {
     font-family: 'brown-light';
-    src: url('../fonts/BrownLight\ Regular.ttf');
+    src: url('../fonts/Brown\ Pro\ Light.otf');
+    /* src: url('../fonts/BrownLight\ Regular.ttf'); */
 }
 *{
     font-family:'brown-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -158,4 +160,9 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+#googleMap > div{
+    transform-style:preserve-3d;
+    transform:perspective(auto) translateZ(-30vw) scale(1.4);
+    perspective:1000;
 }
