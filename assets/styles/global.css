@@ -1,22 +1,30 @@
 @font-face {
-    font-family: 'brown-regular';
-    src: url('../fonts/Brown\ Pro\ Regular.otf');
-    /* src: url('../fonts/BrownMedium\ Regular.ttf'); */
+	font-family: "Brown Regular";
+  	src: url("./assets/fonts/Brown-Regular.eot"); /* IE9*/
+  	src: url("./assets/fonts/Brown-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  	url("./assets/fonts/Brown-Regular.woff2") format("woff2"), /* chromeã€firefox */
+  	url("./assets/fonts/Brown-Regular.woff") format("woff"), /* chromeã€firefox */
+  	url("./assets/fonts/Brown-Regular.ttf") format("truetype"), /* chromeã€firefoxã€operaã€Safari, Android, iOS 4.2+*/
+  	url("./assets/fonts/Brown-Regular.svg#Brown Regular Regular") format("svg"); /* iOS 4.1- */
 }
 @font-face {
-    font-family: 'brown-light';
-    src: url('../fonts/Brown\ Pro\ Light.otf');
-    /* src: url('../fonts/BrownLight\ Regular.ttf'); */
+	font-family: "Brown Light";
+  	src: url("./assets/fonts/Brown-Light.eot"); /* IE9*/
+  	src: url("./assets/fonts/Brown-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  	url("./assets/fonts/Brown-Light.woff2") format("woff2"), /* chromeã€firefox */
+  	url("./assets/fonts/Brown-Light.woff") format("woff"), /* chromeã€firefox */
+  	url("./assets/fonts/Brown-Light.ttf") format("truetype"), /* chromeã€firefoxã€operaã€Safari, Android, iOS 4.2+*/
+  	url("./assets/fonts/Brown-Light.svg#Brown Light") format("svg"); /* iOS 4.1- */
 }
 *{
-    font-family:'brown-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Brown Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .brown-light{
-    font-family: 'brown-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Brown Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .brown-regular{
-    font-family: 'brown-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Brown Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .myContainer{
     width: 100%;
