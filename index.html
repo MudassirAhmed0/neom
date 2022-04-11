@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charSet="UTF-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
     <link rel="canonical" href='' />
-    <meta name="viewport" content= "width=device-width, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta name="robots" content="noindex" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta property="og:locale" content="en_US" />
@@ -50,12 +51,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./assets/js/config.js"></script>
 </head>
-<body >
-   <nav class="left-[50%] z-30 transform translate-x-[-50%] myContainer flex justify-between absolute top-10 items-center">
+
+<body>
+    <nav
+        class="left-[50%] z-30 transform translate-x-[-50%] myContainer flex justify-between absolute top-10 items-center">
         <div class="w-[237px] h-[78px]">
-           <a href="#">
-               <img src="./assets/images/png/logo.png" alt="Neom Logo">
-           </a>
+            <a href="#">
+                <img src="./assets/images/png/logo.png" alt="Neom Logo">
+            </a>
         </div>
         <ul class="text-white uppercase  flex gap-x-12">
             <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
@@ -63,15 +66,21 @@
                     About Us
                 </a>
             </li>
-            <li onmouseenter="handleDropdownMouseEnter(this)" onmouseleave="handleDropdownMouseLeave(this)" class="relative dropdownBtn ">
-                <span class="cursor-pointer tracking-[3px] flex gap-x-[5px] hover:text-gold transition-all  duration-300" >
+            <li onmouseenter="handleDropdownMouseEnter(this)" onmouseleave="handleDropdownMouseLeave(this)"
+                class="relative dropdownBtn ">
+                <span
+                    class="cursor-pointer tracking-[3px] flex gap-x-[5px] hover:text-gold transition-all  duration-300">
                     Divisions
-                    <img class="relative transition-all duration-300" src='./assets/images/svg/arrow.svg'/>
+                    <img class="relative transition-all duration-300" src='./assets/images/svg/arrow.svg' />
                 </span>
-                <div class="px-[28px] pt-[28px] w-[549px] overflow-hidden h-[172px] transition-all duration-300       tracking-0 absolute left-[-210px] rounded-[15px] flex justify-between dropdown ">
-                  <div class="img_container absolute top-[-130px] right-[-200px]">
-                    <img src="./assets/images/svg/menu-brand.svg" alt="brandIcon">
-                  </div>
+                <div
+                    class="px-[28px] pt-[28px] w-[549px] overflow-hidden h-[172px] transition-all duration-300       tracking-0 absolute left-[-210px] rounded-[15px] flex justify-between dropdown ">
+                    <!-- <div class="img_container absolute top-[-130px] right-[-200px]">
+                        <img src="./assets/images/svg/menu-brand.svg" alt="brandIcon">
+                    </div> -->
+                    <div class="absolute top-0 right-0 img_container w-[175px]">
+                        <img src="./assets/images/brandicons/navBrand.png" alt="navBrand">
+                    </div>
                     <ul class="flex flex-col gap-y-[24px]">
                         <li class="hover:text-gold transition-all duration-300">
                             <a href="#">
@@ -90,7 +99,7 @@
                         </li>
                     </ul>
                     <ul>
-                        <li class="hover:text-gold transition-all duration-300">
+                        <li class="hover:text-gold transition-all duration-300 relative z-5">
                             <a href="#">
                                 Operational Technology
                             </a>
@@ -114,107 +123,162 @@
                 </a>
             </li>
         </ul>
-   </nav>
-   <section id="firstSection" class="relative min-h-[100vh]">
-       <div class="w-full h-full absolute top-0 left-0">
-            
+    </nav>
+    <section id="firstSection" class="relative min-h-[100vh]">
+        <div class="w-full h-full absolute top-0 left-0">
+
             <span class="absolute top-0 left-0 w-full h-full z-[2]   homeHeroOverlay1">
-        
+
             </span>
-            
-        
-                <video autoplay muted loop class="w-full h-full object-cover relative  " src="./assets/videos/big-city-of-big-data-animation-of-the-city-2022-03-19-07-37-07-utc.MP4 (1) (1) (1).mp4"></video>
-            
 
-       </div>
-       
- 
-       <div class="myContainer relative flex flex-col z-[3]  justify-center min-h-[100vh] text-white">
-            <h1 id="heroHeading"  data-aos-once="true" data-aos="fade-right" data-aos-duration="700" class=" text-5xl uppercase w-1/2 leading-[54px] tracking-[9.6px] "><span class="text-gold">Privacy</span> Is Not For The Passive</h1>
-            <p id="heroText"  data-aos-once="true" data-aos="fade-right"  data-aos-delay="500" data-aos-duration="700" class="delay-5s text-xl w-[50%] mt-4 brown-light ">Information is the oxygem of the modern age. It seeps through the walls topped by barbed wire, it wafts across the electrified borders.</p>
-       </div>
 
-   </section>
-   <section   class="bg-light">
-       <section id="secondSection" class="myContainerWithoutPadding">
-           <div class="py-[130px] z-[3] pl-[30px] overflow-hidden pr-[60px] bg-offWhite ml-[80px] mt-[-40px] flex justify-between relative">
-               <h2  data-aos-once="true" data-aos="zoom-in" data-aos-duration="700" class="text-[40px] text-right tracking-[8px] leading-[56px] uppercase w-[40%] text-black">
-                   Neom Mission To <span class="tracking-[9px]">Technology And <span class="text-gold">Security</span></span> 
-               </h2>
-               <div class="w-[54%] leading-[30px]  text-xl text-black">
-                   <p   data-aos-once="true" data-aos="fade-left"  data-aos-delay="500" data-aos-duration="700" class="brown-light">
-                       NEOM is committed to protecting the security and privacy of its IT/OT assets in accordance with National Cybersecurity Authority (NCA) and National Data Management Office (NDMO) regulatory requirements. Information and Operational Technology (OT) assets should be protected against the changing threat landscape to ensure NEOMs meet their business objectives while managing Cybersecurity risk to acceptable levels and maximizing the return on investment.
-                   </p>
-                   <p  data-aos-once="true" data-aos="fade-left"  data-aos-delay="700" data-aos-duration="700"  class="brown-light mt-10">   
-                       The senior leadership of NEOM has established a robust Cybersecurity Risk Management Department, to provide the guidance and assurance necessary to protect IT/OT assets and effectively manage Cybersecurity risks within NEOM’s environment and with its partners.
-                  </p>
-               </div>
-               <span class="absolute mybrandIcon">
-                   <img src="./assets/images/svg/banner-mission.svg" alt="brandIcon">
-               </span>
-           </div>
-       </section>
+            <video autoplay muted loop class="w-full h-full object-cover relative  "
+                src="./assets/videos/big-city-of-big-data-animation-of-the-city-2022-03-19-07-37-07-utc.MP4 (1) (1) (1).mp4"></video>
+
+
+        </div>
+
+
+        <div class="myContainer relative flex flex-col z-[3]  justify-center min-h-[100vh] text-white">
+            <h1 id="heroHeading" data-aos-once="true" data-aos="fade" data-aos-duration="700"
+                class=" text-5xl uppercase w-1/2 leading-[54px] tracking-[9.6px] "><span
+                    class="text-gold">Privacy</span> Is Not For The Passive</h1>
+            <p id="heroText" data-aos-once="true" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
+                class="delay-5s text-xl w-[50%] mt-4 brown-light ">Information is the oxygem of the modern age. It seeps
+                through the walls topped by barbed wire, it wafts across the electrified borders.</p>
+        </div>
+
+    </section>
+    <section class="bg-light">
+        <section id="secondSection" class="myContainerWithoutPadding">
+            <div
+                class="py-[130px] z-[3] pl-[30px] overflow-hidden pr-[60px] bg-offWhite ml-[80px] mt-[-40px] flex justify-between relative">
+                <h2 data-aos-once="true" data-aos="fade" data-aos-duration="700"
+                    class="text-[40px] text-right tracking-[8px] leading-[56px] uppercase w-[40%] text-black">
+                    Neom Mission To <span class="tracking-[9px]">Technology And <span
+                            class="text-gold">Security</span></span>
+                </h2>
+                <div class="w-[54%] leading-[30px]  text-xl text-black">
+                    <p data-aos-once="true" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
+                        class="brown-light">
+                        NEOM is committed to protecting the security and privacy of its IT/OT assets in accordance with
+                        National Cybersecurity Authority (NCA) and National Data Management Office (NDMO) regulatory
+                        requirements. Information and Operational Technology (OT) assets should be protected against the
+                        changing threat landscape to ensure NEOMs meet their business objectives while managing
+                        Cybersecurity risk to acceptable levels and maximizing the return on investment.
+                    </p>
+                    <p data-aos-once="true" data-aos="fade-up" data-aos-delay="700" data-aos-duration="700"
+                        class="brown-light mt-10">
+                        The senior leadership of NEOM has established a robust Cybersecurity Risk Management Department,
+                        to provide the guidance and assurance necessary to protect IT/OT assets and effectively manage
+                        Cybersecurity risks within NEOM’s environment and with its partners.
+                    </p>
+                </div>
+                <!-- <span class="absolute mybrandIcon">
+                    <img src="./assets/images/svg/banner-mission.svg" alt="brandIcon">
+                </span> -->
+                <span class="absolute bottom-0 left-0 ">
+                    <img src="./assets/images/brandicons/missionbrandicon.png" alt="brandIcon">
+                </span>
+            </div>
+        </section>
         <section id="thirdSection" class="max-w-[1050px] mx-auto  flex justify-between mt-[130px]">
             <div class="w-[22%]">
-                <img  data-aos-once="true" data-aos="zoom-in"   data-aos-duration="700" src="./assets/images/svg/qoutes.svg" alt="Quotes">
+                <img data-aos-once="true" data-aos="zoom-in" data-aos-duration="700"
+                    src="./assets/images/svg/qoutes.svg" alt="Quotes">
             </div>
             <div>
-                <p   data-aos-once="true" data-aos="fade-right"  data-aos-delay="500" data-aos-duration="700" class="text-black text-[28px] leading-[42px]">
-                    NEOM will be the most secured <span class="text-gold">humanity centered</span> cognitive region where bold dreams are realised.
+                <p data-aos-once="true" data-aos="fade" data-aos-delay="500" data-aos-duration="700"
+                    class="text-black text-[28px] leading-[42px]">
+                    NEOM will be the most secured <span class="text-gold">humanity centered</span> cognitive region
+                    where bold dreams are realised.
                 </p>
                 <div class="mt-[88px] flex flex-col">
-                    <span  data-aos-once="true" data-aos="fade-up"    data-aos-duration="700" class="text-black  text-[22px] leading-[30px]">
+                    <span data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
+                        class="text-black  text-[22px] leading-[30px]">
                         Mesfer Almesfer
                     </span>
-                    <span  data-aos-once="true" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="700" class="text-black  brown-light text-lg leading-[30px]">
+                    <span data-aos-once="true" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
+                        class="text-black  brown-light text-lg leading-[30px]">
                         Cybersecurity Director (CISO)
                     </span>
                 </div>
 
             </div>
         </section>
-    <section>
-        <div class="myContainer text-black mt-[300px]">
-                <h3  data-aos-once="true" data-aos="fade-up"  data-aos-duration="700" class="w-1/2 text-center mx-auto text-[40px] uppercase tracking-[8px] leading-[56px]">Fuelled Bt a secure by design <span class="text-gold">approach</span></h3>
-                <p  data-aos-once="true" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="700" class="mt-8 w-[59%] text-center mx-auto brown-light text-xl">Cybersecurity at NEOM will be enabled by an invisible infrastructure that maintains resilience and empowers a digital lifestyle. The cybersecurity program will be fuelled <br> a secure by design approach</p>
-        </div>
-        <div class="mt-[77px]">
-            <img src="./assets/images/home/neom-shield.png" class="lazy" loading="lazy" alt="Neom Shield">
-        </div>
-    </section>
+        <span class="block mx-auto h-[130px] w-[2px]   my-[88px]">
+            <lottie-player src="./assets/lf30_editor_1wxncxtj.json" background="transparent" speed="1"
+                style="width: 2px; height: 130px;" loop autoplay></lottie-player>
+
+        </span>
+
+        <section>
+            <div class="myContainer text-black ">
+                <h3 data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
+                    class="w-1/2 text-center mx-auto text-[40px] uppercase tracking-[8px] leading-[56px]">Fuelled Bt a
+                    secure by design <span class="text-gold">approach</span></h3>
+                <p data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                    class="mt-8 w-[59%] text-center mx-auto brown-light text-xl">Cybersecurity at NEOM will be enabled
+                    by an invisible infrastructure that maintains resilience and empowers a digital lifestyle. The
+                    cybersecurity program will be fuelled <br> a secure by design approach</p>
+            </div>
+            <div class="mt-[77px]">
+                <img src="./assets/images/home/neom-shield.png" class="lazy" loading="lazy" alt="Neom Shield">
+            </div>
+        </section>
     </section>
     <section class="relative">
         <div class="absolute top-0 left-0  w-full h-full">
             <span class="absolute top-0 left-0  z-[2] w-full h-full homeOverlay3">
 
             </span>
-            <video class="w-full h-full object-cover relative lazy " loading='lazy' src="./assets/videos/final_6214fe1c75568300765a62ca_225206.mp4" muted loop autoplay></video>
+            <video class="w-full h-full object-cover relative lazy " loading='lazy'
+                src="./assets/videos/final_6214fe1c75568300765a62ca_225206.mp4" muted loop autoplay></video>
         </div>
         <div class="myContainer text-white flex flex-col py-[205px]  z-[3] items-center relative">
-            <h4  data-aos-once="true" data-aos="fade-up"   data-aos-duration="700" class="uppercase text-[40px] leading-[56px] tracking-[8px] text-center">Neom Cybersecurity Divisions</h4>
-            <p  data-aos-once="true" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="700" class="brown-light text-xl leading-[30px] text-center w-[64%] mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore voluptua.</p>
+            <h4 data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
+                class="uppercase text-[40px] leading-[56px] tracking-[8px] text-center">Neom Cybersecurity Divisions
+            </h4>
+            <p data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                class="brown-light text-xl leading-[30px] text-center w-[64%] mt-3">Lorem ipsum dolor sit amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore voluptua.</p>
             <div class="w-full flex justify-between  mt-[90px]">
-                <div class="w-[21.5%] h-[200px] border-r-[0.5px] border-white flex flex-col justify-center readMoreContainer">
-                    <img src="./assets/images/home/caution.svg" class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Caution">
+                <div
+                    class="w-[21.5%] h-[200px] border-r-[0.5px] border-white flex flex-col justify-center readMoreContainer">
+                    <img src="./assets/images/home/caution.svg"
+                        class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Caution">
                     <span class="text-lg uppercase tracking-[3.6px] w-3/4">Governance, Risk and Compliance</span>
-                    <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]" src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
+                    <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span
+                            class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]"
+                                src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
                 </div>
-                <div class="w-[21.5%] h-[200px] border-r-[0.5px] border-white flex flex-col justify-center readMoreContainer">
-                     <img src="./assets/images/home/engineering.svg" class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Engineering And Architecture">
+                <div
+                    class="w-[21.5%] h-[200px] border-r-[0.5px] border-white flex flex-col justify-center readMoreContainer">
+                    <img src="./assets/images/home/engineering.svg"
+                        class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Engineering And Architecture">
                     <span class="text-lg uppercase tracking-[3.6px] w-3/4">Engineering and Architecture</span>
-                    <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]" src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
+                    <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span
+                            class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]"
+                                src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
 
                 </div>
-                <div class="w-[21.5%] h-[200px] border-r-[0.5px] border-white flex flex-col justify-center readMoreContainer">
-                    <img src="./assets/images/home/fast-time.svg" class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Response And Resilience">
+                <div
+                    class="w-[21.5%] h-[200px] border-r-[0.5px] border-white flex flex-col justify-center readMoreContainer">
+                    <img src="./assets/images/home/fast-time.svg"
+                        class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Response And Resilience">
                     <span class="text-lg uppercase tracking-[3.6px] w-3/4">Response And Resilience</span>
-                    <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]" src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
+                    <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span
+                            class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]"
+                                src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
 
                 </div>
                 <div class="w-[21.5%] h-[200px]  flex flex-col justify-center  readMoreContainer">
-                    <img src="./assets/images/home/circuit.svg" class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Operational Technology">
+                    <img src="./assets/images/home/circuit.svg"
+                        class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Operational Technology">
                     <span class="text-lg uppercase tracking-[3.6px] w-3/4">Operational Technology</span>
-                    <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]" src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
+                    <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span
+                            class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]"
+                                src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
 
                 </div>
 
@@ -222,55 +286,87 @@
         </div>
     </section>
     <section class=" bg-light">
-        <div class="  relative text-black myContainer overflow-hidden">
-                <!-- <div class="w-[1320px] h-[2000px] position absolute left-[50%] transform translate-x-[-50%] mx-auto mt-[-1650px] border border-[#bfbdb9] rounded-[1144px]">
+        <div class="  relative text-black max-w-[1440px] px-[60px] mx-auto overflow-hidden">
+            <!-- <div class="w-[1320px] h-[2000px] position absolute left-[50%] transform translate-x-[-50%] mx-auto mt-[-1650px] border border-[#bfbdb9] rounded-[1144px]">
                     
                 </div> -->
-                <div class="w-[1320px] h-[2000px] position absolute transition-all duration-500 gradient1 slideNav left-[50%] transform translate-x-[-50%] mx-auto mt-[-1650px]  rounded-[1144px]">
-                    <div class="roundkrna  left-[2px] top-[2px]  rounded-[1144px] bg-light relative  ">
+            <div
+                class="w-[1320px] h-[2000px] position absolute transition-all duration-500 gradient1 slideNav left-[50%] transform translate-x-[-50%] mx-auto mt-[-1650px]  rounded-[1144px]">
+                <div class="roundkrna  left-[2px] top-[2px]  rounded-[1144px] bg-light relative  ">
 
-                    </div>
                 </div>
-        
-        <span   data-aos-once="true" data-aos="fade-up"   data-aos-duration="500" onclick="slide(1)" class="w-[98px] h-[98px] transition-all  nav-ball duration-500 flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center  rounded-full carouselcircleBlue absolute top-[205px] left-[330px] ">
+            </div>
+
+            <span data-aos-once="true" data-aos="fade-up" data-aos-duration="500" onclick="slide(1)"
+                class="w-[98px] h-[98px] transition-all cursor-pointer hover:bg-[#9c9b98]  nav-ball duration-500 flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center  rounded-full carouselcircleBlue absolute top-[205px] left-[330px] ">
                 01
-        </span>
-        <span   data-aos-once="true" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="500" onclick="slide(2)" class="w-[98px] h-[98px] transition-all nav-ball duration-300  flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center rounded-full bg-[#bfbdb9]  absolute top-[285px] left-[540px] ">
+            </span>
+            <span data-aos-once="true" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500"
+                onclick="slide(2)"
+                class="w-[98px] h-[98px] transition-all cursor-pointer hover:bg-[#9c9b98] nav-ball duration-300  flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center rounded-full bg-[#bfbdb9]  absolute top-[285px] left-[540px] ">
                 02
-        </span>
-        <span   data-aos-once="true" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="500" onclick="slide(3)" class="w-[98px] h-[98px] transition-all nav-ball duration-300  flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center rounded-full bg-[#bfbdb9] absolute top-[290px] left-[780px] ">
+            </span>
+            <span data-aos-once="true" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500"
+                onclick="slide(3)"
+                class="w-[98px] h-[98px] transition-all cursor-pointer hover:bg-[#9c9b98] nav-ball duration-300  flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center rounded-full bg-[#bfbdb9] absolute top-[290px] left-[780px] ">
                 03
-        </span>
-        <span   data-aos-once="true" data-aos="fade-up"  data-aos-delay="600" data-aos-duration="500" onclick="slide(4)" class="w-[98px] h-[98px] transition-all nav-ball duration-300  flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center rounded-full bg-[#bfbdb9] absolute top-[205px] right-[330px] ">
+            </span>
+            <span data-aos-once="true" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500"
+                onclick="slide(4)"
+                class="w-[98px] h-[98px] transition-all cursor-pointer hover:bg-[#9c9b98] nav-ball duration-300  flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center rounded-full bg-[#bfbdb9] absolute top-[205px] right-[330px] ">
                 04
-        </span>
-        <div class="myContainer pt-20 relative">
-            <h4  data-aos-once="true" data-aos="fade-up"    data-aos-duration="700" class="text-[40px] uppercase tracking-[8px] leading-[56px] w-[64%] text-center mx-auto">Guidelines for  a Cyber-secure <span class="text-gold">New Future</span></h4>
+            </span>
+            <div class="myContainer pt-20 relative">
+                <h4 data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
+                    class="text-[40px] uppercase tracking-[8px] leading-[56px] w-[64%] text-center mx-auto">Guidelines
+                    for a Cyber-secure <span class="text-gold">New Future</span></h4>
 
-        </div>
+            </div>
 
-        <div class="myCarousel mt-[320px] relative ">
-            <div class="slide slideOne flex flex-col slide-active transition-all duration-300   items-center text-center">
-                <span  data-aos-once="true" data-aos="fade-right"   data-aos-duration="700" class="text-[28px]">Compelling</span>
-                <span  data-aos-once="true" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="700" class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Succinct enough to be memorable, yet capture the essence of the cybersecurity practice; should reflect the common business language</span>
-                <img   data-aos-once="true" data-aos="fade-right"   data-aos-duration="700" src="./assets/images/home/compelling.svg" class="lazy" loading="lazy" alt="Compelling">
+            <div class="myCarousel mt-[320px] relative ">
+                <div
+                    class="slide slideOne flex flex-col slide-active transition-all duration-300   items-center text-center">
+                    <span data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
+                        class="text-[28px]">Compelling</span>
+                    <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                        class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Succinct enough to be
+                        memorable, yet capture the essence of the cybersecurity practice; should reflect the common
+                        business language</span>
+                    <img data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
+                        src="./assets/images/home/compelling.svg" class="lazy" loading="lazy" alt="Compelling">
+                </div>
+                <div class="slide slideTwo flex flex-col hidden transition-all duration-300  items-center text-center">
+                    <span data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
+                        class="text-[28px]">SlideTwo</span>
+                    <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                        class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Succinct enough to be
+                        memorable, yet capture the essence of the cybersecurity practice; should reflect the common
+                        business language</span>
+                    <img data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
+                        src="./assets/images/home/compelling.svg" class="lazy" loading="lazy" alt="Compelling">
+                </div>
+                <div
+                    class="slide slideThree flex flex-col hidden transition-all duration-300  items-center text-center">
+                    <span data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
+                        class="text-[28px]">SlideThree</span>
+                    <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                        class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Succinct enough to be
+                        memorable, yet capture the essence of the cybersecurity practice; should reflect the common
+                        business language</span>
+                    <img data-aos-once="true" data-aos="fade-right" data-aos-duration="700"
+                        src="./assets/images/home/compelling.svg" class="lazy" loading="lazy" alt="Compelling">
+                </div>
+                <div class="slide slideFour flex flex-col hidden transition-all duration-300  items-center text-center">
+                    <span data-aos-once="true" data-aos="fade-right" data-aos-duration="700"
+                        class="text-[28px]">SlideFour</span>
+                    <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
+                        class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Succinct enough to be
+                        memorable, yet capture the essence of the cybersecurity practice; should reflect the common
+                        business language</span>
+                    <img data-aos-once="true" data-aos="fade-right" data-aos-duration="700"
+                        src="./assets/images/home/compelling.svg" class="lazy" loading="lazy" alt="Compelling">
+                </div>
             </div>
-            <div class="slide slideTwo flex flex-col hidden transition-all duration-300  items-center text-center">
-                <span  data-aos-once="true" data-aos="fade-right"   data-aos-duration="700" class="text-[28px]">SlideTwo</span>
-                <span  data-aos-once="true" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="700" class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Succinct enough to be memorable, yet capture the essence of the cybersecurity practice; should reflect the common business language</span>
-                <img   data-aos-once="true" data-aos="fade-right"   data-aos-duration="700" src="./assets/images/home/compelling.svg" class="lazy" loading="lazy" alt="Compelling">
-            </div>
-            <div class="slide slideThree flex flex-col hidden transition-all duration-300  items-center text-center">
-                <span  data-aos-once="true" data-aos="fade-right"   data-aos-duration="700" class="text-[28px]">SlideThree</span>
-                <span  data-aos-once="true" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="700" class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Succinct enough to be memorable, yet capture the essence of the cybersecurity practice; should reflect the common business language</span>
-                <img   data-aos-once="true" data-aos="fade-right"   data-aos-duration="700" src="./assets/images/home/compelling.svg" class="lazy" loading="lazy" alt="Compelling">
-            </div>
-            <div class="slide slideFour flex flex-col hidden transition-all duration-300  items-center text-center">
-                <span  data-aos-once="true" data-aos="fade-right"   data-aos-duration="700" class="text-[28px]">SlideFour</span>
-                <span  data-aos-once="true" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="700" class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Succinct enough to be memorable, yet capture the essence of the cybersecurity practice; should reflect the common business language</span>
-                <img   data-aos-once="true" data-aos="fade-right"   data-aos-duration="700" src="./assets/images/home/compelling.svg" class="lazy" loading="lazy" alt="Compelling">
-            </div>
-        </div>
         </div>
 
     </section>
@@ -278,17 +374,23 @@
     <section>
         <section class="bg-light">
             <div class="myContainer pt-[110px] relative top-5 text-black">
-               <div class="flex justify-between">
-                   <h4 class="text-[40px] uppercase tracking-[8px]" data-aos-once="true" data-aos="fade-right"   data-aos-duration="700">cybersecurity news</h4>
-                   <div class="slider_nav flex gap-x-6">
-                        <img data-aos-once="true" data-aos="zoom-in"  data-aos-delay="500"  data-aos-duration="500" class="am-prev   cursor-pointer hover:opacity-[0.4] transition-all duration-300" src="./assets/images/svg/arrow-left-hand.svg" alt="">
-                        <img data-aos-once="true" data-aos="zoom-in"  data-aos-delay="700"  data-aos-duration="500" class="am-next cursor-pointer hover:opacity-[0.4] transition-all duration-300" src="./assets/images/svg/arrow-right-hand.svg" alt="">
-                   </div>
-               </div>
-               
+                <div class="flex justify-between">
+                    <h4 class="text-[40px] uppercase tracking-[8px]" data-aos-once="true" data-aos="fade"
+                        data-aos-duration="700">cybersecurity news</h4>
+                    <div class="slider_nav flex gap-x-6">
+                        <img data-aos-once="true" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="500"
+                            class="am-prev   cursor-pointer hover:opacity-[0.4] transition-all duration-300"
+                            src="./assets/images/svg/arrow-left-hand.svg" alt="">
+                        <img data-aos-once="true" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="500"
+                            class="am-next cursor-pointer hover:opacity-[0.4] transition-all duration-300"
+                            src="./assets/images/svg/arrow-right-hand.svg" alt="">
+                    </div>
+                </div>
+
                 <div class="owl-carousel owl-theme top-[65px] ">
-                    <div class="item relative h-[600px] rounded-[25px] overflow-hidden flex flex-col text-white justify-end ">
-                        <a  href="#" class="absolute z-[5] top-0 left-0 w-full h-full bg-[#13100d4f]">
+                    <div
+                        class="item relative h-[600px] rounded-[25px] overflow-hidden flex flex-col text-white justify-end ">
+                        <a href="#" class="absolute z-[5] top-0 left-0 w-full h-full bg-[#13100d4f]">
 
                         </a>
                         <div class="img_container absolute top-0 left-0 w-full h-full">
@@ -296,12 +398,16 @@
                         </div>
                         <div href="#" class="flex flex-col   pb-[40px] px-[40px] relative">
                             <span class="brown-light mb-4">October 26, 2021</span>
-                            <span class="mb-10 brown-light leading-[34px] w-[63%] text-[26px]">NEOM tech & digital holding company and oneweb sign $200M JV for satellite network</span>
-                            <a  href='#'class="text-[15px] relative z-[6] hover:text-[#ebc03f] transition-all duration-300 text-gold tracking-[3px] uppercase">Read More</a>
+                            <span class="mb-10 brown-light leading-[34px] w-[63%] text-[26px]">NEOM tech & digital
+                                holding company and oneweb sign $200M JV for satellite network</span>
+                            <a href='#'
+                                class="text-[15px] relative z-[6] hover:text-[#ebc03f] transition-all duration-300 text-gold tracking-[3px] uppercase">Read
+                                More</a>
                         </div>
 
                     </div>
-                    <div class="item relative h-[600px] rounded-[25px] overflow-hidden flex flex-col text-white justify-end ">
+                    <div
+                        class="item relative h-[600px] rounded-[25px] overflow-hidden flex flex-col text-white justify-end ">
                         <a href="#" class="absolute z-[5] top-0 left-0 w-full h-full bg-[#13100d4f]">
 
                         </a>
@@ -310,43 +416,64 @@
                         </div>
                         <div href="#" class="flex flex-col   pb-[40px] px-[40px] relative">
                             <span class="brown-light mb-4">October 26, 2021</span>
-                            <span class="mb-10 brown-light leading-[34px] w-[63%] text-[26px]">NEOM tech & digital holding company and oneweb sign $200M JV for satellite network</span>
-                            <a  href='#'class="text-[15px] hover:text-[#ebc03f] relative z-[6] transition-all duration-300 text-gold tracking-[3px] uppercase">Read More</a>
+                            <span class="mb-10 brown-light leading-[34px] w-[63%] text-[26px]">NEOM tech & digital
+                                holding company and oneweb sign $200M JV for satellite network</span>
+                            <a href='#'
+                                class="text-[15px] hover:text-[#ebc03f] relative z-[6] transition-all duration-300 text-gold tracking-[3px] uppercase">Read
+                                More</a>
                         </div>
 
                     </div>
-                    
+
                 </div>
             </div>
-       
+
         </section>
-        <section class="bg-gray-400 min-h-[101.5vh] flex items-end relative">
+        <section class="dark-gray min-h-[101.5vh] flex items-end relative">
             <div id="googleMap" class="absolute top-0 left-0 w-full h-full"></div>
             <div class="myContainer py-[130px] text-white">
-                <h4 class="text-[40px] uppercase tracking-[8px] leading-[56px]" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">We hear from you</h4>
+                <h4 class="text-[40px] uppercase tracking-[8px] leading-[56px]">We hear from you</h4>
                 <form class="relative mt-[74px] flex  justify-between gap-y-[55px] flex-wrap w-[59.55%]">
                     <div class="flex flex-col gap-y-[22px] w-[47%]">
-                        <label for="deapartmentName" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Department Name <span class="text-gold brown-light">*</span></label>
-                        <input required type="text"  name="deapartmentName" id="deapartmentName" class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Department Name...">
+                        <label for="deapartmentName"
+                            class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Department Name <span
+                                class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="deapartmentName" id="deapartmentName"
+                            class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                            placeholder="Enter Department Name...">
                     </div>
                     <div class="flex flex-col gap-y-[22px] w-[47%]">
-                        <label for="fullName" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Full Name <span class="text-gold brown-light">*</span></label>
-                        <input required type="text" name="fullName" id="fullName"  class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Full Name...">
+                        <label for="fullName" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Full
+                            Name <span class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="fullName" id="fullName"
+                            class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                            placeholder="Enter Full Name...">
                     </div>
                     <div class="flex flex-col gap-y-[22px] w-[47%]">
-                        <label for="mobile" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Mobile <span class="text-gold brown-light">*</span></label>
-                        <input required type="number"  name="mobile" id="mobile" class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Mobile Number...">
+                        <label for="mobile" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Mobile
+                            <span class="text-gold brown-light">*</span></label>
+                        <input required type="number" name="mobile" id="mobile"
+                            class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                            placeholder="Enter Mobile Number...">
                     </div>
                     <div class="flex flex-col gap-y-[22px] w-[47%]">
-                        <label for="email" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Email <span class="text-gold brown-light">*</span></label>
-                        <input required type="text" name="email" id="email"  class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Email...">
+                        <label for="email" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Email
+                            <span class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="email" id="email"
+                            class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                            placeholder="Enter Email...">
                     </div>
                     <div class="flex flex-col gap-y-[22px] w-[100%]">
-                        <label for="Summary" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Summary of Incident <span class="text-gold brown-light">*</span></label>
-                        <input required type="text" name="Summary" id="Summary"  class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"  placeholder="Enter Summary...">
+                        <label for="Summary"
+                            class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Summary of Incident
+                            <span class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="Summary" id="Summary"
+                            class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                            placeholder="Enter Summary...">
                     </div>
-                    <button data-aos="fade-up" data-aos-duration="700" data-aos-once="true" class="w-[184px] bg-[#b89535] hover:bg-[#ebc03f] text-[15px] uppercase tracking-[3px] transition-all duration-300 h-[53px] rounded-[28px]">
-                            Submit
+                    <button
+                        class="w-[184px] bg-[#b89535] hover:bg-[#ebc03f] text-[15px] uppercase tracking-[3px] transition-all duration-300 h-[53px] rounded-[28px]">
+                        Submit
                     </button>
                 </form>
             </div>
@@ -354,7 +481,8 @@
     </section>
 
     <footer class="bg-light h-[82px] border-t-[6px] border-gold   text-15 flex justify-center items-center ">
-        <span class="brown-light">© NEOM 2021. All rights reserved. | Designed by <a href="https://brackets-tech.com/" target="_blank" class="brown-light text-gold">Brackets Technology</a></span>
+        <span class="brown-light">© NEOM 2021. All rights reserved. | Designed by <a href="https://brackets-tech.com/"
+                target="_blank" class="brown-light text-gold">Brackets Technology</a></span>
     </footer>
 
     <script src="./assets/js/jquery.min.js"></script>
@@ -366,110 +494,143 @@
     <script src="./assets/js/aos.js"> </script>
     <script src="./assets/js/lazy.js"></script>
     <script src="./assets/js/aosinitialize.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script> 
+    <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/owlHome.js"></script>
+    <!-- 24.709724, 46.645758 -->
+    <!-- 24.709860, 46.645651 -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <script>
         function myMap() {
-           var mapProp= {
-            center:new google.maps.LatLng(24.711900,46.650435),
-             center: { lat: 24.712276, lng:46.648282},
-            zoom: 17.5,
-            disableDefaultUI: true,
-      styles: [
-        { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
-        { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
-        { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-        {
-          featureType: "administrative.locality",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#d59563" }],
-        },
-        {
-          featureType: "poi",
-          elementType: "labels.text.fill",
-          stylers: [{color:'f0f'}],
-        },
-        {
-          featureType: "poi",
-          elementType: "labels",
-          stylers: [{color:'#000'}],
-        },
-        {
-          featureType: "poi.park",
-          elementType: "geometry",
-          stylers: [{ color: "#263c3f" }],
-        },
-        {
-          featureType: "poi.park",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#6b9a76" }],
-        },
-        {
-          featureType: "road",
-          elementType: "geometry",
-          stylers: [{ color: "#38414e" }],
-        },
-        {
-          featureType: "road",
-          elementType: "geometry.stroke",
-          stylers: [{ color: "#212a37" }],
-        },
-        {
-          featureType: "road",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#9ca5b3" }],
-        },
-        {
-          featureType: "road.highway",
-          elementType: "geometry",
-          stylers: [{ color: "#746855" }],
-        },
-        {
-          featureType: "road.highway",
-          elementType: "geometry.stroke",
-          stylers: [{ color: "#1f2835" }],
-        },
-        {
-          featureType: "road.highway",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#f3d19c" }],
-        },
-        {
-          featureType: "transit",
-          elementType: "geometry",
-          stylers: [{ color: "#2f3948" }],
-        },
-        {
-          featureType: "transit.station",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#d59563" }],
-        },
-        {
-          featureType: "water",
-          elementType: "geometry",
-          stylers: [{ color: "#17263c" }],
-        },
-        {
-          featureType: "water",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#515c6d" }],
-        },
-        {
-          featureType: "water",
-          elementType: "labels.text.stroke",
-          stylers: [{ color: "#17263c" }],
-        },
-        
-      ],
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-          
-    }
+            var mapProp = {
+                center: new google.maps.LatLng(24.711900, 46.650435),
+                center: { lat: 24.709954, lng: 46.645208 },
+                zoom: 16.6,
+                // zoom: 3.3,
+                disableDefaultUI: true,
+                styles: [
+                    //   bg color 
+                    { elementType: "geometry", stylers: [{ color: "#13100d" }] },
+                    { elementType: "labels.text.stroke", stylers: [{ color: "#13100d" }] },
+                    { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+                    {
+                        featureType: "administrative.locality",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#d59563" }],
+                    },
+                    {
+                        featureType: "poi",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: 'f0f' }],
+                    },
+                    {
+                        featureType: "poi",
+                        elementType: "labels",
+                        //   places names color
+                        stylers: [{ color: '#000' }],
+                    },
+                    {
+                        featureType: "poi.park",
+                        elementType: "geometry",
+                        stylers: [{ color: "#100e0b" }],
+                    },
+                    {
+                        featureType: "poi.park",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#6b9a76" }],
+                    },
+                    {
+                        featureType: "road",
+                        elementType: "geometry",
+                        //   road color 
+                        // stylers: [{ color: "#2E2C2C" }],
+                        stylers: [{ color: "#1a1919" }],
+                        // stylers: [{ color: "#201E1C" }],
+                    },
+                    {
+                        featureType: "road",
+                        elementType: "geometry.stroke",
+                        //   road stroke color
+                        stylers: [{ color: "#13100d" }],
+                    },
+                    {
+                        featureType: "road",
+                        elementType: "labels.text.fill",
+                        //   text color
+                        stylers: [{ color: "#32302f" }],
+                    },
+                    {
+                        featureType: "road.highway",
+                        elementType: "geometry",
+                        stylers: [{ color: "#746855" }],
+                    },
+                    {
+                        featureType: "road.highway",
+                        elementType: "geometry.stroke",
+                        stylers: [{ color: "#1f2835" }],
+                    },
+                    {
+                        featureType: "road.highway",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#f3d19c" }],
+                    },
+                    {
+                        featureType: "transit",
+                        elementType: "geometry",
+                        stylers: [{ color: "#2f3948" }],
+                    },
+                    {
+                        featureType: "transit.station",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#d59563" }],
+                    },
+                    {
+                        featureType: "water",
+                        elementType: "geometry",
+                        stylers: [{ color: "#17263c" }],
+                    },
+                    {
+                        featureType: "water",
+                        elementType: "labels.text.fill",
+                        stylers: [{ color: "#515c6d" }],
+                    },
+                    {
+                        featureType: "water",
+                        elementType: "labels.text.stroke",
+                        stylers: [{ color: "#17263c" }],
+                    },
+                    // road arrows 
+                    {
+                        featureType: "road",
+                        elementType: "labels.icon",
+                        stylers: [
+                            { "visibility": "off" }
+                        ]
+                    },
 
-        </script>
+                    // hide pointer
+                    {
+                        elementType: "labels.icon",
+                        stylers: [{ visibility: "off" }],
+                    },
+                ],
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpU_U9dBKsILBrm4AQ9tYojZGRMWnXbME&callback=myMap"></script>
+            // marker = new google.maps.Marker({
+            //     position: new google.maps.LatLng(24.711405, 46.650574),
+            //     map: map,
+            //         //  icon: 'https://cloud.headwayapp.co/changelogs_images/images/big/000/016/393-90c8090df0a63e76991bc6aae7b46c87d8cdb51e.gif',
+            // });
+
+
+        }
+
+    </script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpU_U9dBKsILBrm4AQ9tYojZGRMWnXbME&callback=myMap"></script>
 
 </body>
+
 </html>

@@ -20,7 +20,7 @@
 }
 .myContainer{
     width: 100%;
-    max-width: 1440px;
+    max-width: 1600px;
     padding-left: 60px;
     padding-right: 60px;
     margin-left: auto;
@@ -129,6 +129,22 @@ transform: rotate(11deg);
   hsl(207deg 100% 50%) 100%
 );
 }
+.carouselcircleBlue:hover{
+    background-image: linear-gradient(
+  180deg,
+  hsl(207deg 100% 41%) 0%,
+  hsl(207deg 100% 41%) 10%,
+  hsl(207deg 100% 41%) 20%,
+  hsl(207deg 100% 41%) 30%,
+  hsl(207deg 100% 42%) 40%,
+  hsl(207deg 100% 42%) 50%,
+  hsl(207deg 100% 45%) 60%,
+  hsl(207deg 100% 49%) 70%,
+  hsl(207deg 100% 53%) 80%,
+  hsl(207deg 100% 56%) 90%,
+  hsl(207deg 100% 60%) 100%
+);
+}
 
 .readMoreContainer:hover .readMore{
     max-height: 50px;
@@ -166,3 +182,26 @@ input[type=number] {
     transform:perspective(auto) translateZ(-30vw) scale(1.4);
     perspective:1000;
 }
+.dark-gray {
+    background-color: #1D1C1B;
+}
+.animating-line{
+    animation: 2s animatedLine infinite 1s;
+    width: 100%;
+    height: 100%;
+    background-color: #b89535;
+    display: block; 
+    
+}
+.animating-line::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background: #b8953580;  */
+    background-color: red;
+    height: 50%;
+    z-index: 2;
+}
+ 
