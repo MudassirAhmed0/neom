@@ -212,4 +212,6 @@ input[type=number] {
     height: 50%;
     z-index: 2;
 }
- 
+ .owl-item{
+     max-width: 1012px!important;
+ }
