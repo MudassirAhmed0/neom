@@ -73,8 +73,9 @@
                     Divisions
                     <img class="relative transition-all duration-300" src='./assets/images/svg/arrow.svg' />
                 </span>
-                <div
-                    class="px-[28px] pt-[28px] w-[549px] overflow-hidden h-[172px] transition-all duration-300       tracking-0 absolute left-[-210px] rounded-[15px] flex justify-between dropdown ">
+                <div class="dropdown bachalay">
+                    <div
+                    class="px-[28px] pt-[28px] dropdown  w-[549px] overflow-hidden h-[180px] top-10 normal-case transition-all duration-300       tracking-0 absolute left-[-210px] rounded-[15px] flex justify-between  ">
                     <!-- <div class="img_container absolute top-[-130px] right-[-200px]">
                         <img src="./assets/images/svg/menu-brand.svg" alt="brandIcon">
                     </div> -->
@@ -83,29 +84,31 @@
                     </div>
                     <ul class="flex flex-col gap-y-[24px]">
                         <li class="hover:text-gold transition-all duration-300">
-                            <a href="#">
+                            <a href="#" class="brown-light">
                                 Governance, Risk and Compliance
                             </a>
                         </li>
                         <li class="hover:text-gold transition-all duration-300">
-                            <a href="#">
+                            <a href="#" class="brown-light">
                                 Engineering and Architecture
                             </a>
                         </li>
                         <li class="hover:text-gold transition-all duration-300">
-                            <a href="#">
+                            <a href="#" class="brown-light">
                                 Response and Resilience
                             </a>
                         </li>
                     </ul>
                     <ul>
                         <li class="hover:text-gold transition-all duration-300 relative z-5">
-                            <a href="#">
+                            <a href="#" class="brown-light">
                                 Operational Technology
                             </a>
                         </li>
                     </ul>
                 </div>
+                </div>
+               
             </li>
             <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
                 <a href="#">
@@ -145,13 +148,13 @@
                     class="text-gold">Privacy</span> Is Not For The Passive</h1>
             <p id="heroText" data-aos-once="true" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
                 class="delay-5s text-xl leading-[30px] w-[50%] mt-4 brown-light ">Information is the oxygen of the modern age. It seeps
-                through the walls topped by barbed wire, it wafts across the electrified borders.</p>
+                through the walls <br> topped by barbed wire, it wafts across the electrified borders.</p>
         </div>
 
     </section>
     <section class="bg-light">
         <section id="secondSection" class="">
-            <div  class="rightEdge bg-offWhite mt-[-40px] ml-auto">
+            <div  class="rightEdge bg-offWhite mt-[-40px] ml-auto  z-[3] relative">
                 <div
                 class="py-[130px] z-[3] pl-[30px] overflow-hidden pr-[60px] max-w-[1360px]   flex justify-between relative">
                 <h2 data-aos-once="true" data-aos="fade" data-aos-duration="700"
@@ -579,10 +582,9 @@
     <script>
         function myMap() {
             var mapProp = {
-                center: new google.maps.LatLng(24.711900, 46.650435),
-                center: { lat: 24.709954, lng: 46.645208 },
+                center: new google.maps.LatLng(28.453783, 34.904616),
+                // center: { lat: 28.739279, lng: 35.25263 },
                 zoom: 17,
-                // zoom: 3.3,
                 disableDefaultUI: true,
                 styles: [
                     //   bg color 
@@ -691,13 +693,20 @@
                     },
                 ],
             };
+
+            var icon = {
+                url: "./assets/pulse.gif", // url
+                scaledSize: new google.maps.Size(50, 50), // scaled size
+                origin: new google.maps.Point(0,0), // origin
+                anchor: new google.maps.Point(0, 0) // anchor
+};
             var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-            // marker = new google.maps.Marker({
-            //     position: new google.maps.LatLng(24.711405, 46.650574),
-            //     map: map,
-            //         //  icon: 'https://cloud.headwayapp.co/changelogs_images/images/big/000/016/393-90c8090df0a63e76991bc6aae7b46c87d8cdb51e.gif',
-            // });
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(28.4548992, 34.9132841),
+                map: map,
+                     icon: icon,
+            });
 
 
         }

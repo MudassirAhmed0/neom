@@ -8,24 +8,31 @@ owl.owlCarousel({
     responsive:{
         0:{
             items:1,
+            slideBy:1,
         },
         600:{
             items:1.275,
+            slideBy:1,
         },
         1000:{
             items:1.35, 
+            slideBy:1, 
         },
         1500:{
             items:1.5, 
+            slideBy:1, 
         },
         1800:{
             items:1.7, 
+            slideBy:1, 
         },
         2000:{
             items:1.9, 
+            slideBy:1, 
         },
         2200:{
             items:2, 
+            slideBy:1, 
         },
     }, 
 });
