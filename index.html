@@ -48,85 +48,85 @@
     <link rel="stylesheet" href="./assets/styles/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/styles/owl.theme.default.min.css">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/tailwind.js"></script>
     <script src="./assets/js/config.js"></script>
 </head>
 
 <body>
     <nav
-        class="left-[50%] z-30 transform translate-x-[-50%] myContainer flex justify-between absolute top-10 items-center">
-        <div class="w-[237px] h-[78px]">
-            <a href="#">
-                <img src="./assets/images/png/logo.png" alt="Neom Logo">
+    class="left-[50%] z-30 transform translate-x-[-50%] myContainer flex justify-between absolute top-10 items-center">
+    <div class="w-[237px] h-[78px]">
+        <a href="/">
+            <img src="./assets/images/png/logo.png" alt="Neom Logo">
+        </a>
+    </div>
+    <ul class="text-white uppercase  flex gap-x-12">
+        <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
+            <a href="/about.html">
+                About Us
             </a>
-        </div>
-        <ul class="text-white uppercase  flex gap-x-12">
-            <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
-                <a href="#">
-                    About Us
-                </a>
-            </li>
-            <li onmouseenter="handleDropdownMouseEnter(this)" onmouseleave="handleDropdownMouseLeave(this)"
-                class="relative dropdownBtn ">
-                <span
-                    class="cursor-pointer tracking-[3px] flex gap-x-[5px] hover:text-gold transition-all  duration-300">
-                    Divisions
-                    <img class="relative transition-all duration-300" src='./assets/images/svg/arrow.svg' />
-                </span>
-                <div class="dropdown bachalay">
-                    <div
-                    class="px-[28px] pt-[28px] dropdown  w-[549px] overflow-hidden h-[180px] top-10 normal-case transition-all duration-300       tracking-0 absolute left-[-210px] rounded-[15px] flex justify-between  ">
-                    <!-- <div class="img_container absolute top-[-130px] right-[-200px]">
-                        <img src="./assets/images/svg/menu-brand.svg" alt="brandIcon">
-                    </div> -->
-                    <div class="absolute top-0 right-0 img_container w-[175px]">
-                        <img src="./assets/images/brandicons/navBrand.png" alt="navBrand">
-                    </div>
-                    <ul class="flex flex-col gap-y-[24px]">
-                        <li class="hover:text-gold transition-all duration-300">
-                            <a href="#" class="brown-light">
-                                Governance, Risk and Compliance
-                            </a>
-                        </li>
-                        <li class="hover:text-gold transition-all duration-300">
-                            <a href="#" class="brown-light">
-                                Engineering and Architecture
-                            </a>
-                        </li>
-                        <li class="hover:text-gold transition-all duration-300">
-                            <a href="#" class="brown-light">
-                                Response and Resilience
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="hover:text-gold transition-all duration-300 relative z-5">
-                            <a href="#" class="brown-light">
-                                Operational Technology
-                            </a>
-                        </li>
-                    </ul>
+        </li>
+        <li onmouseenter="handleDropdownMouseEnter(this)" onmouseleave="handleDropdownMouseLeave(this)"
+            class="relative dropdownBtn ">
+            <span
+                class="cursor-pointer tracking-[3px] flex gap-x-[5px] hover:text-gold transition-all  duration-300">
+                Divisions
+                <img class="relative transition-all duration-300" src='./assets/images/svg/arrow.svg' />
+            </span>
+            <div class="dropdown bachalay">
+                <div
+                class="px-[28px] pt-[28px] dropdown  w-[549px] overflow-hidden h-[180px] top-10 normal-case transition-all duration-300       tracking-0 absolute left-[-210px] rounded-[15px] flex justify-between  ">
+                <!-- <div class="img_container absolute top-[-130px] right-[-200px]">
+                    <img src="./assets/images/svg/menu-brand.svg" alt="brandIcon">
+                </div> -->
+                <div class="absolute top-0 right-0 img_container w-[175px]">
+                    <img src="./assets/images/brandicons/navBrand.png" alt="navBrand">
                 </div>
-                </div>
-               
-            </li>
-            <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
-                <a href="#">
-                    Strategy
-                </a>
-            </li>
-            <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
-                <a href="#">
-                    Standards
-                </a>
-            </li>
-            <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
-                <a href="#">
-                    News
-                </a>
-            </li>
-        </ul>
-    </nav>
+                <ul class="flex flex-col gap-y-[24px]">
+                    <li class="hover:text-gold transition-all duration-300">
+                        <a href="/governance.html" class="brown-light">
+                            Governance, Risk and Compliance
+                        </a>
+                    </li>
+                    <li class="hover:text-gold transition-all duration-300">
+                        <a href="/engineering.html" class="brown-light">
+                            Engineering and Architecture
+                        </a>
+                    </li>
+                    <li class="hover:text-gold transition-all duration-300">
+                        <a href="/response.html" class="brown-light">
+                            Response and Resilience
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="hover:text-gold transition-all duration-300 relative z-5">
+                        <a href="/operational.html" class="brown-light">
+                            Operational Technology
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+           
+        </li>
+        <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
+            <a href="/strategy.html">
+                Strategy
+            </a>
+        </li>
+        <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
+            <a href="/standards.html">
+                Standards
+            </a>
+        </li>
+        <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
+            <a href="/news.html">
+                News
+            </a>
+        </li>
+    </ul>
+</nav>
     <section id="firstSection" class="relative min-h-[100vh]">
         <div class="w-full h-full absolute top-0 left-0">
 
@@ -158,7 +158,7 @@
                 <div
                 class="py-[130px] z-[3] pl-[30px] overflow-hidden pr-[60px] max-w-[1360px]   flex justify-between relative">
                 <h2 data-aos-once="true" data-aos="fade" data-aos-duration="700"
-                    class="text-[40px] text-right tracking-[8px] leading-[56px] uppercase w-[38.5%] text-black">
+                    class="text-[40px] mt-[-10px] text-right tracking-[8px] leading-[56px] uppercase w-[38.5%] text-black">
                     Neom Mission To <span class="tracking-[9px]">Technology And <span
                             class="text-gold">Security</span></span>
                 </h2>
@@ -253,7 +253,7 @@
                     class="w-[21.5%] h-[200px] border-r-[0.5px] border-white flex flex-col justify-center readMoreContainer">
                     <img src="./assets/images/home/caution.svg"
                         class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Caution">
-                    <span class="text-lg uppercase tracking-[3.6px] w-3/4">Governance, Risk and Compliance</span>
+                    <span class="text-lg uppercase tracking-[3.6px] ">Governance, Risk and Compliance</span>
                     <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span
                             class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]"
                                 src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
@@ -262,7 +262,7 @@
                     class="w-[21.5%] h-[200px] border-r-[0.5px] border-white flex flex-col justify-center readMoreContainer">
                     <img src="./assets/images/home/engineering.svg"
                         class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Engineering And Architecture">
-                    <span class="text-lg uppercase tracking-[3.6px] w-3/4">Engineering and Architecture</span>
+                    <span class="text-lg uppercase tracking-[3.6px] ">Engineering and Architecture</span>
                     <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span
                             class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]"
                                 src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
@@ -272,7 +272,7 @@
                     class="w-[21.5%] h-[200px] border-r-[0.5px] border-white flex flex-col justify-center readMoreContainer">
                     <img src="./assets/images/home/fast-time.svg"
                         class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Response And Resilience">
-                    <span class="text-lg uppercase tracking-[3.6px] w-3/4">Response And Resilience</span>
+                    <span class="text-lg uppercase tracking-[3.6px] ">Response And Resilience</span>
                     <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span
                             class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]"
                                 src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
@@ -281,7 +281,7 @@
                 <div class="w-[21.5%] h-[200px]  flex flex-col justify-center  readMoreContainer">
                     <img src="./assets/images/home/circuit.svg"
                         class="w-[48px]  h-[42px] transition-all duration-300 mb-5" alt="Operational Technology">
-                    <span class="text-lg uppercase tracking-[3.6px] w-3/4">Operational Technology</span>
+                    <span class="text-lg uppercase tracking-[3.6px] ">Operational Technology</span>
                     <span class="text-[15px] leading-[21px] tracking-[3px]  uppercase flex items-end  readMore"><span
                             class="flex gap-x-2 mt-8">Read More <img class="transform rotate-[270deg] translate-y-[1px]"
                                 src="./assets/images/svg/arrow.svg" alt="Arrow"></span> </span>
@@ -441,7 +441,7 @@
         <section class="dark-gray min-h-[920px] flex items-end relative">
             <div id="googleMap" class="absolute top-0 left-0 w-full h-full"></div>
             <div class="myContainer py-[130px] text-white">
-                <h4 class="text-[40px] uppercase tracking-[8px] leading-[56px]">We hear from you</h4>
+                <h4 class="text-[40px] uppercase tracking-[8px] leading-[56px] relative">We hear from you</h4>
                 <form class="relative mt-[74px] flex  justify-between gap-y-[55px] flex-wrap w-[59.55%]">
                     <div class="flex flex-col gap-y-[22px] w-[47%]">
                         <label for="deapartmentName"
@@ -504,144 +504,14 @@
     <script src="./assets/js/lazy.js"></script>
     <script src="./assets/js/aosinitialize.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/owlHome.js"></script>
-    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/owlHome.js"></script> 
     <!-- 24.709724, 46.645758 -->
     <!-- 24.709860, 46.645651 -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-    <script>
-        function myMap() {
-            var mapProp = {
-                center: new google.maps.LatLng(28.453783, 34.904616),
-                // center: { lat: 28.739279, lng: 35.25263 },
-                zoom: 17,
-                disableDefaultUI: true,
-                styles: [
-                    //   bg color 
-                    { elementType: "geometry", stylers: [{ color: "#13100d" }] },
-                    { elementType: "labels.text.stroke", stylers: [{ color: "#13100d" }] },
-                    { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-                    {
-                        featureType: "administrative.locality",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#d59563" }],
-                    },
-                    {
-                        featureType: "poi",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: 'f0f' }],
-                    },
-                    {
-                        featureType: "poi",
-                        elementType: "labels",
-                        //   places names color
-                        stylers: [{ color: '#000' }],
-                    },
-                    {
-                        featureType: "poi.park",
-                        elementType: "geometry",
-                        stylers: [{ color: "#100e0b" }],
-                    },
-                    {
-                        featureType: "poi.park",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#6b9a76" }],
-                    },
-                    {
-                        featureType: "road",
-                        elementType: "geometry",
-                        //   road color 
-                        // stylers: [{ color: "#2E2C2C" }],
-                        stylers: [{ color: "#1a1919" }],
-                        // stylers: [{ color: "#201E1C" }],
-                    },
-                    {
-                        featureType: "road",
-                        elementType: "geometry.stroke",
-                        //   road stroke color
-                        stylers: [{ color: "#13100d" }],
-                    },
-                    {
-                        featureType: "road",
-                        elementType: "labels.text.fill",
-                        //   text color
-                        stylers: [{ color: "#32302f" }],
-                    },
-                    {
-                        featureType: "road.highway",
-                        elementType: "geometry",
-                        stylers: [{ color: "#746855" }],
-                    },
-                    {
-                        featureType: "road.highway",
-                        elementType: "geometry.stroke",
-                        stylers: [{ color: "#1f2835" }],
-                    },
-                    {
-                        featureType: "road.highway",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#f3d19c" }],
-                    },
-                    {
-                        featureType: "transit",
-                        elementType: "geometry",
-                        stylers: [{ color: "#2f3948" }],
-                    },
-                    {
-                        featureType: "transit.station",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#d59563" }],
-                    },
-                    {
-                        featureType: "water",
-                        elementType: "geometry",
-                        stylers: [{ color: "#17263c" }],
-                    },
-                    {
-                        featureType: "water",
-                        elementType: "labels.text.fill",
-                        stylers: [{ color: "#515c6d" }],
-                    },
-                    {
-                        featureType: "water",
-                        elementType: "labels.text.stroke",
-                        stylers: [{ color: "#17263c" }],
-                    },
-                    // road arrows 
-                    {
-                        featureType: "road",
-                        elementType: "labels.icon",
-                        stylers: [
-                            { "visibility": "off" }
-                        ]
-                    },
-
-                    // hide pointer
-                    {
-                        elementType: "labels.icon",
-                        stylers: [{ visibility: "off" }],
-                    },
-                ],
-            };
-
-            var icon = {
-                url: "./assets/pulse.gif", // url
-                scaledSize: new google.maps.Size(50, 50), // scaled size
-                origin: new google.maps.Point(0,0), // origin
-                anchor: new google.maps.Point(0, 0) // anchor
-};
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(28.4548992, 34.9132841),
-                map: map,
-                     icon: icon,
-            });
-
-
-        }
-
+    <script
+        src="./assets/js/map.js"
+    >
     </script>
 
     <script

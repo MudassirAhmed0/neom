@@ -34,6 +34,10 @@ owl.owlCarousel({
             items:2, 
             slideBy:1, 
         },
+        2800:{
+            items:2.5, 
+            slideBy:1, 
+        },
     }, 
 });
 

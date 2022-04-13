@@ -28,7 +28,7 @@
 }
 .myContainer{
     width: 100%;
-    max-width: 1600px;
+    max-width: 1440px;
     padding-left: 60px;
     padding-right: 60px;
     margin-left: auto;
@@ -80,7 +80,48 @@
         opacity: 1;
     }
 }
+.tabsHeaderButton{
+    cursor: pointer; 
+}
+.tab{
+    display: none!important;
+}
+.tab.active{
+    display: flex!important;
+    animation: fade .5s;
+}
+@keyframes scale {
+    0%{
+        /* transform: scale(0.9); */
+        opacity: 0;
+    }
+    50%{
+        /* transform: scale(1.1); */
+        opacity: 0.5;
+    }
+    100%{
+        /* transform: scale(1); */
+        opacity: 1;
+    }
+}
 
+.tabsHeaderButton span::before{
+    position:absolute;
+    content: '';
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #ebc03f;
+    transform: scaleX(0);
+    transition: .4s all;
+    
+}
+.tabsHeaderButton:hover span::before,.tabsHeaderButton.active span::before{
+    
+    transform: scaleX(1);
+    
+    
+}
 .mybrandIcon{
     /* width:1663.4px;
  
@@ -193,6 +234,13 @@ input[type=number] {
 .dark-gray {
     background-color: #1D1C1B;
 }
+.rightEdge{
+    width:94.444%;
+    max-width: calc((100vw - 1440px) / 2 + 1360px);
+}
+.rightEdgeCarousel{
+    width: 100%;
+}
 .animating-line{
     animation: 2s animatedLine infinite 1s;
     width: 100%;
@@ -200,6 +248,11 @@ input[type=number] {
     background-color: #b89535;
     display: block; 
     
+}
+.bookmarkDivider{
+  width: 11px;
+  height: 1.5px;
+  background-color: #b89535;
 }
 .bachalay::before{
     content: '';
