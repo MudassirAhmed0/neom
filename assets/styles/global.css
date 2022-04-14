@@ -1,30 +1,40 @@
 @font-face {
-	font-family: "Brown Regular";
-  	src: url("../fonts/Brown-Regular.eot"); /* IE9*/
-  	src: url("../fonts/Brown-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  	url("../fonts/Brown-Regular.woff2") format("woff2"), /* chromeã€firefox */
-  	url("../fonts/Brown-Regular.woff") format("woff"), /* chromeã€firefox */
-  	url("../fonts/Brown-Regular.ttf") format("truetype"), /* chromeã€firefoxã€operaã€Safari, Android, iOS 4.2+*/
-  	url("../fonts/Brown-Regular.svg#Brown Regular Regular") format("svg"); /* iOS 4.1- */
+    font-family: 'Brown';
+    src: url('../fonts/Brown-Regular.eot');
+    src: url('../fonts/Brown-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brown-Regular.woff2') format('woff2'),
+        url('../fonts/Brown-Regular.woff') format('woff'),
+        url('../fonts/Brown-Regular.ttf') format('truetype'),
+        url('../fonts/Brown-Regular.svg#Brown-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-	font-family: "Brown Light";
-  	src: url("../fonts/Brown-Light.eot"); /* IE9*/
-  	src: url("../fonts/Brown-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  	url("../fonts/Brown-Light.woff2") format("woff2"), /* chromeã€firefox */
-  	url("../fonts/Brown-Light.woff") format("woff"), /* chromeã€firefox */
-  	url("../fonts/Brown-Light.ttf") format("truetype"), /* chromeã€firefoxã€operaã€Safari, Android, iOS 4.2+*/
-  	url("../fonts/Brown-Light.svg#Brown Light") format("svg"); /* iOS 4.1- */
+    font-family: 'Brown';
+    src: url('../fonts/Brown-Light.eot');
+    src: url('../fonts/Brown-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Brown-Light.woff2') format('woff2'),
+        url('../fonts/Brown-Light.woff') format('woff'),
+        url('../fonts/Brown-Light.ttf') format('truetype'),
+        url('../fonts/Brown-Light.svg#Brown-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
+
+
 *{
-    font-family:'Brown Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Brown', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .brown-light{
-    font-family: 'Brown Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Brown' ;
+    font-weight: 300;
 }
 .brown-regular{
-    font-family: 'Brown Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Brown', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .myContainer{
     width: 100%;

@@ -1,8 +1,10 @@
 var owl = $('.owl-carousel');
 owl.owlCarousel({
-    loop:true, 
+    loop:false, 
+    rewind:false,
     margin:40, 
     dots:false,
+    nav:true,
     // autoplay:true,
     lazyLoad:true,
     responsive:{
