@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="UTF-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+    <link rel="canonical" href='' />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="robots" content="noindex" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content />
+    <meta property="og:description" content />
+    <meta property="og:url" content />
+    <meta property="og:site_name" content />
+    <meta property="og:image" content />
+    <meta name="twitter:card" content />
+    <meta name="twitter:site" content />
+    <meta name="twitter:creator" content />
+    <meta name="twitter:title" content />
+    <meta name="twitter:description" content />
+    <meta name="twitter:domain" content />
+    <meta name="twitter:image" content />
+    <meta name="twitter:url" content />
+    <meta itemProp="image" content />
+    <meta itemProp="name" content />
+    <meta itemProp="description" content />
+    <meta name="geo.region" content />
+    <meta name="geo.placename" content />
+    <meta name="geo.position" content />
+    <meta name="ICBM" content />
+    <meta name content />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
+
+    <meta name="theme-color" content="#0054a6" />
+    <title>Neom  || Industrial Operational Technoloy</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/aos.css">
+
+
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/config.js"></script>
+</head>
+
+<body>
+    <nav
+    class="left-[50%] z-30 transform translate-x-[-50%] myContainer flex justify-between absolute top-10 items-center">
+    <div class="w-[237px] h-[78px]">
+        <a href="./">
+            <img src="./assets/images/png/logo.png" alt="Neom Logo">
+        </a>
+    </div>
+    <ul class="text-white uppercase  flex gap-x-12">
+        <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
+            <a href="./about.html">
+                About Us
+            </a>
+        </li>
+        <li onmouseenter="handleDropdownMouseEnter(this)" onmouseleave="handleDropdownMouseLeave(this)"
+            class="relative dropdownBtn ">
+            <span
+                class="cursor-pointer tracking-[3px] flex gap-x-[5px] hover:text-gold transition-all  duration-300">
+                Divisions
+                <img class="relative transition-all duration-300" src='./assets/images/svg/arrow.svg' />
+            </span>
+            <div class="dropdown bachalay">
+                <div
+                    class="px-[28px] pt-[28px] dropdown  w-[549px] overflow-hidden h-[180px] top-10 normal-case transition-all duration-300       tracking-0 absolute left-[-210px] rounded-[15px] flex justify-between  ">
+                    <!-- <div class="img_container absolute top-[-130px] right-[-200px]">
+                <img src="./assets/images/svg/menu-brand.svg" alt="brandIcon">
+            </div> -->
+                    <div class="absolute top-0 right-0 img_container w-[175px]">
+                        <img src="./assets/images/brandicons/navBrand.png" alt="navBrand">
+                    </div>
+                    <ul class="flex flex-col gap-y-[24px]">
+                        <li class="hover:text-gold transition-all duration-300">
+                            <a href="./governance.html" class="brown-light">
+                                Governance, Risk and Compliance
+                            </a>
+                        </li>
+                        <li class="hover:text-gold transition-all duration-300">
+                            <a href="./engineering.html" class="brown-light">
+                                Engineering and Architecture
+                            </a>
+                        </li>
+                        <li class="hover:text-gold transition-all duration-300">
+                            <a href="./response.html" class="brown-light">
+                                Response and Resilience
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="hover:text-gold transition-all duration-300 relative z-5">
+                            <a href="./operational.html" class="brown-light">
+                                Operational Technology
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </li>
+        <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
+            <a href="./strategy.html">
+                Strategy
+            </a>
+        </li>
+        <li class="hover:text-gold transition-all   duration-300 tracking-[3px]">
+            <a href="./standards.html">
+                Standards
+            </a>
+        </li>
+        <li class="hover:text-gold  transition-all duration-300 tracking-[3px]">
+            <a href="./news.html">
+                News
+            </a>
+        </li>
+        <li class="hover:text-gold transition-all text-gold duration-300 tracking-[3px]">
+            <a href="./contact-us.html">
+                Contact Us
+            </a>
+        </li>
+    </ul>
+</nav>
+    
+          <section class="dark-gray min-h-[920px] flex items-end relative">
+            <div id="googleMap" class="absolute top-0 left-0 w-full h-full"></div>
+            <div class="myContainer py-[130px] text-white">
+                <h4 class="text-[40px] uppercase tracking-[8px] leading-[56px] relative">We hear from you</h4>
+                <form class="relative mt-[74px] flex  justify-between gap-y-[55px] flex-wrap w-[59.55%]">
+                    <div class="flex flex-col gap-y-[22px] w-[47%]">
+                        <label for="deapartmentName"
+                            class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Department Name <span
+                                class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="deapartmentName" id="deapartmentName"
+                            class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                            placeholder="Enter Department Name...">
+                    </div>
+                    <div class="flex flex-col gap-y-[22px] w-[47%]">
+                        <label for="fullName" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Full
+                            Name <span class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="fullName" id="fullName"
+                            class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                            placeholder="Enter Full Name...">
+                    </div>
+                    <div class="flex flex-col gap-y-[22px] w-[47%]">
+                        <label for="mobile" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Mobile
+                            <span class="text-gold brown-light">*</span></label>
+                        <input required type="number" name="mobile" id="mobile"
+                            class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                            placeholder="Enter Mobile Number...">
+                    </div>
+                    <div class="flex flex-col gap-y-[22px] w-[47%]">
+                        <label for="email" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Email
+                            <span class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="email" id="email"
+                            class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                            placeholder="Enter Email...">
+                    </div>
+                    <div class="flex flex-col gap-y-[22px] w-[100%]">
+                        <label for="Summary"
+                            class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Summary of Incident
+                            <span class="text-gold brown-light">*</span></label>
+                        <input required type="text" name="Summary" id="Summary"
+                            class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                            placeholder="Enter Summary...">
+                    </div>
+                    <button
+                        class="w-[184px] bg-[#b89535] hover:bg-[#ebc03f] text-[15px] uppercase tracking-[3px] transition-all duration-300 h-[53px] rounded-[28px]">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </section> 
+    
+ 
+
+
+    <script src="./assets/js/global.js"></script>
+    <script
+        src="./assets/js/map.js"
+    >
+    </script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpU_U9dBKsILBrm4AQ9tYojZGRMWnXbME&callback=myMap"></script>
+
+</body>
+
+</html>
