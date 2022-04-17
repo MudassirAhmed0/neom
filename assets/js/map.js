@@ -1,8 +1,8 @@
 function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(28.453783, 34.904616),
+    var mapProp = { 
+        center: new google.maps.LatLng(28.113021, 35.107412),
         // center: { lat: 28.739279, lng: 35.25263 },
-        zoom: 16,
+        zoom: 17.5,
         disableDefaultUI: true,
         styles: [
             //   bg color 
@@ -121,7 +121,7 @@ function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
     marker = new google.maps.Marker({
-        position: new google.maps.LatLng(28.4548992, 34.9132841),
+        position: new google.maps.LatLng(28.112972, 35.109409),
         map: map,
              icon: icon,
     });
