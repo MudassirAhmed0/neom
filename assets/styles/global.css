@@ -25,7 +25,7 @@
 }
 
 
-*{
+body{
     font-family:'Brown', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -101,6 +101,10 @@ body{
 }
 .slide-active{
     display: flex;
+    animation: 1s fade;
+}
+.slideActive{
+    display: block;
     animation: 1s fade;
 }
 @keyframes fade {
@@ -319,6 +323,9 @@ background-color: transparent;
      background-color: transparent!important;
      opacity: .7!important;
  }
+ .my-prev.slick-disabled, .my-next.slick-disabled{
+    display: none;
+}
 
  
  * {

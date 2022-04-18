@@ -6,7 +6,7 @@ const slide  =(slideNum)=>{
     const slides = document.querySelectorAll('.slide')
     slides.forEach(slide=>{
         slide.classList.add('hidden')
-        slide.classList.remove('slide-active')
+        slide.classList.remove('slideActive')
     })
     switch (slideNum? slideNum :slideNumber) {
         case 1:
@@ -18,7 +18,7 @@ const slide  =(slideNum)=>{
             nav.classList.remove('gradientTwo6')
 
             slides[0].classList.remove('hidden')
-            slides[0].classList.add('slide-active')
+            slides[0].classList.add('slideActive')
 
             balls[1].classList.remove('carouselcircleBlue')
             balls[2].classList.remove('carouselcircleBlue')
@@ -40,7 +40,7 @@ const slide  =(slideNum)=>{
             nav.classList.remove('gradientTwo6')
             
             slides[1].classList.remove('hidden')
-            slides[1].classList.add('slide-active')
+            slides[1].classList.add('slideActive')
 
             balls[1].classList.add('carouselcircleBlue')
             balls[1].classList.remove('bg-[#bfbdb9]')
@@ -62,7 +62,7 @@ const slide  =(slideNum)=>{
             nav.classList.remove('gradientTwo6')
 
             slides[2].classList.remove('hidden')
-            slides[2].classList.add('slide-active')
+            slides[2].classList.add('slideActive')
 
             balls[1].classList.add('carouselcircleBlue')
             balls[1].classList.remove('bg-[#bfbdb9]')
@@ -84,7 +84,7 @@ const slide  =(slideNum)=>{
             nav.classList.remove('gradientTwo6')
             
             slides[3].classList.remove('hidden')
-            slides[3].classList.add('slide-active')
+            slides[3].classList.add('slideActive')
 
             balls[1].classList.add('carouselcircleBlue')
             balls[1].classList.remove('bg-[#bfbdb9]')
@@ -106,8 +106,8 @@ const slide  =(slideNum)=>{
             nav.classList.add('gradientTwo5')
             nav.classList.remove('gradientTwo6')
             
-            slides[3].classList.remove('hidden')
-            slides[3].classList.add('slide-active')
+            slides[4].classList.remove('hidden')
+            slides[4].classList.add('slideActive')
 
             balls[1].classList.add('carouselcircleBlue')
             balls[1].classList.remove('bg-[#bfbdb9]')
@@ -128,11 +128,11 @@ const slide  =(slideNum)=>{
             nav.classList.remove('gradientTwo2')
             nav.classList.remove('gradientTwo3')
             nav.classList.remove('gradientTwo4')
-            nav.classList.add('gradientTwo5')
-            nav.classList.remove('gradientTwo6')
+            nav.classList.remove('gradientTwo5')
+            nav.classList.add('gradientTwo6')
             
-            slides[3].classList.remove('hidden')
-            slides[3].classList.add('slide-active')
+            slides[5].classList.remove('hidden')
+            slides[5].classList.add('slideActive')
 
             balls[1].classList.add('carouselcircleBlue')
             balls[1].classList.remove('bg-[#bfbdb9]')
@@ -162,8 +162,7 @@ let start = false
 const startCarousel =()=>{
   
         let el = document.querySelector('.myCarousel')
-        var rect = el.getBoundingClientRect();
-    
+        var rect = el.getBoundingClientRect(); 
         if (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -171,9 +170,10 @@ const startCarousel =()=>{
             rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
         ){
             start = true
+          
         }
-        if(start){
-            
+        console.log(start)
+        if(start){ 
             setInterval(()=>{ 
                 slideNumber= slideNumber !== 6? slideNumber + 1: 1
                 slide()

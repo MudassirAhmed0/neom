@@ -8,13 +8,18 @@ $(document).on('ready', function () {
     //     autoplay: false,
     //     autoplaySpeed: 5000,
     // });
-    $('.single-item').slick({
+    $('.single-item').slick({ 
         // focusOnSelect: true,
         slidesToShow: 1.055,
         slidesToScroll: 1,
         autoplay: false,
+        infinite:true,
         nav:false,
-        arrow:false,
+        prevArrow: $('.my-prev'),
+        nextArrow: $('.my-next'),
+        // prevArrow: '<svg class="slick-prev w-[70px]" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 65.4 17.2" style="enable-background:new 0 0 65.4 17.2;" xml:space="preserve"> <style type="text/css"> 	.st0{fill:none;stroke:#B89535;stroke-width:2;stroke-linecap:round;} </style> <path id="Path_98863" class="st0" d="M44.4,15.7l-7.5-6.8l7.5-7.5"/> </svg>',
+        // nextArrow: '<svg class="slick-next w-[70px]" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 65.4 17.2" style="enable-background:new 0 0 65.4 17.2;" xml:space="preserve"> <style type="text/css"> 	.st0{fill:none;stroke:#B89535;stroke-width:2;stroke-linecap:round;} </style> <path id="Path_98863" class="st0" d="M36.9,1.4l7.5,7.5l-7.5,6.8"/> </svg>',
+      
         responsive: [
             {
                 breakpoint: 3500,
@@ -50,7 +55,7 @@ $(document).on('ready', function () {
             {
                 breakpoint: 1600,
                 settings: {
-                    slidesToShow: 1.055,
+                    slidesToShow: 1.045,
                     slidesToScroll: 1
                 }
             }
