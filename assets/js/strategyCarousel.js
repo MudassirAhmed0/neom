@@ -171,8 +171,7 @@ const startCarousel =()=>{
         ){
             start = true
           
-        }
-        console.log(start)
+        } 
         if(start){ 
             setInterval(()=>{ 
                 slideNumber= slideNumber !== 6? slideNumber + 1: 1
