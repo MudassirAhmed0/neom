@@ -175,11 +175,12 @@
 }
 
 .single-item .slick-track {
-    padding-left: 60px;
+    padding-right: 60px;
 }
 .four-box {
     width: 440px;
 }
+
 .lottie-dot {
     width: 210px;
     height: 50px;
@@ -249,5 +250,40 @@
     .line-1 {
         margin-left: -5px !important;
         margin-right: 15px !important;
+    }
+}
+.arrows-div {
+    z-index: 999;
+}
+@media (min-width: 1680px) {
+    .arrows-div {
+        /* background-color: blue; */
+        right: 130px;
+    }
+}
+@media (min-width: 1820px) {
+    .arrows-div {
+        right: 170px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .arrows-div {
+        right: 380px;
+    }
+}
+@media (min-width: 2090px) {
+    .arrows-div {
+        right: 420px;
+    }
+}
+@media (min-width: 2250px) {
+    .arrows-div {
+        right: 470px;
+    }
+}
+@media (min-width: 2420px) {
+    .arrows-div {
+        right: 510px;
     }
 }

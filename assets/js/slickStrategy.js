@@ -13,7 +13,7 @@ $(document).on('ready', function () {
         slidesToShow: 1.055,
         slidesToScroll: 1,
         autoplay: false,
-        infinite:true,
+        infinite: false,
         nav:false,
         prevArrow: $('.my-prev'),
         nextArrow: $('.my-next'),

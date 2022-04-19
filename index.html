@@ -52,6 +52,20 @@
     <script src="./assets/js/config.js"></script>
 </head>
 
+<style>
+    .inline_im {
+        display: inline !important;
+    }
+
+    .chevron-right {
+        transition: all .3s ease;
+    }
+
+    .homeCarousel .item:hover .chevron-right {
+        margin-left: 5px !important;
+    }
+</style>
+
 <body>
     <nav
         class="left-[50%] z-30 transform brown-light text-[15px] translate-x-[-50%] myContainer flex justify-between absolute top-10 items-center">
@@ -149,8 +163,8 @@
 
         <div class="myContainer relative flex flex-col z-[3]  justify-center min-h-[100vh] text-white">
             <h1 id="heroHeading" data-aos-once="true" data-aos="fade" data-aos-duration="700"
-                class=" text-5xl uppercase  leading-[64px] tracking-[9.6px] "><span
-                    class="text-gold">Privacy</span> Is Not For <br> The Passive</h1>
+                class=" text-5xl uppercase  leading-[64px] tracking-[9.6px] "><span class="text-gold">Privacy</span> Is
+                Not For <br> The Passive</h1>
             <p id="heroText" data-aos-once="true" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
                 class="delay-5s text-xl leading-[30px]  mt-4 brown-light ">Information is the oxygen of the
                 modern age. It seeps
@@ -205,7 +219,7 @@
             </div>
             <div>
                 <p data-aos-once="true" data-aos="fade" data-aos-delay="500" data-aos-duration="700"
-                    class="text-black text-[28px] leading-[42px]">
+                    class="text-black text-[28px] leading-[42px]" id="quote_text">
                     NEOM will be the most secured <span class="text-gold">humanity centered</span> cognitive region
                     where bold dreams are realised.
                 </p>
@@ -224,7 +238,7 @@
         </section>
         <span class="block mx-auto h-[130px] w-[2px]   my-[88px]">
             <lottie-player id="firstLottie" src="./assets/lf30_editor_1wxncxtj.json" background="transparent" speed="1"
-                style="width: 2px; height: 130px;" ></lottie-player>
+                style="width: 2px; height: 130px;"></lottie-player>
 
         </span>
 
@@ -232,7 +246,7 @@
             <div class="myContainer text-black ">
                 <h3 data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
                     class=" text-center mx-auto text-[40px] uppercase tracking-[8px] leading-[56px]">Fuelled by a
-                    secure by <br>  design <span class="text-gold">approach</span></h3>
+                    secure by <br> design <span class="text-gold">approach</span></h3>
                 <p data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
                     class="mt-8 w-[59%] text-center mx-auto brown-light text-xl">Cybersecurity at NEOM will be enabled
                     by an invisible infrastructure that maintains resilience and empowers a digital lifestyle. The
@@ -335,7 +349,7 @@
             <div class="myContainer pt-20 relative">
                 <h4 data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
                     class="text-[40px] uppercase tracking-[8px] leading-[56px]  text-center mx-auto">Guidelines
-                    for a Cyber-secure  <br> <span class="text-gold">New Future</span></h4>
+                    for a Cyber-secure <br> <span class="text-gold">New Future</span></h4>
 
             </div>
 
@@ -345,7 +359,8 @@
                     <span data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
                         class="text-[28px]">Audacious</span>
                     <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
-                        class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Bold enough to broaden imaginations, inspire futuristic ideas, and create a world center for creative people​</span>
+                        class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Bold enough to broaden
+                        imaginations, inspire futuristic ideas, and create a world center for creative people​</span>
                     <img data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
                         src="./assets/images/home/audacious.svg" class="lazy" loading="lazy" alt="Compelling">
                 </div>
@@ -364,7 +379,9 @@
                     <span data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
                         class="text-[28px]">Inspirational</span>
                     <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
-                        class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Aligned with Vision 2030, NEOM master strategy (e.g. NEOM Value Proposition) to inspire a rapidly evolving digital society ​</span>
+                        class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Aligned with Vision 2030, NEOM
+                        master strategy (e.g. NEOM Value Proposition) to inspire a rapidly evolving digital society
+                        ​</span>
                     <img data-aos-once="true" data-aos="fade-right" data-aos-duration="700"
                         src="./assets/images/home/inspirational.png" class="lazy" loading="lazy" alt="Compelling">
                 </div>
@@ -372,7 +389,9 @@
                     <span data-aos-once="true" data-aos="fade-right" data-aos-duration="700"
                         class="text-[28px]">Actionable</span>
                     <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
-                        class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Allows NEOM to quickly translate vision into a working model that drives short & long term success and fosters a future-oriented approach to cybersecurity​</span>
+                        class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Allows NEOM to quickly
+                        translate vision into a working model that drives short & long term success and fosters a
+                        future-oriented approach to cybersecurity​</span>
                     <img data-aos-once="true" data-aos="fade-right" data-aos-duration="700"
                         src="./assets/images/home/actionable.svg" class="lazy" loading="lazy" alt="Compelling">
                 </div>
@@ -383,18 +402,21 @@
 
     <section>
         <section class="bg-light">
-            <div class="rightEdge homeCarousel ml-auto rightEdgeCarousel pl-[60px] pt-[130px] relative  pb-[120px] text-black">
+            <div
+                class="rightEdge homeCarousel ml-auto rightEdgeCarousel pl-[60px] pt-[130px] relative  pb-[120px] text-black">
                 <div class="flex justify-between  pr-[60px]">
                     <h4 class="text-[40px] uppercase tracking-[8px]" data-aos-once="true" data-aos="fade"
                         data-aos-duration="700">cybersecurity news</h4>
                     <div class="slider_nav flex gap-x-6">
-                        <div  onmouseenter="handleMouseOver(this)" onmouseleave="handleMouseLeave(this)" class="bg-white border   flex justify-center items-center rounded-full  am-prev    transition-all duration-300 hover:bg-gold w-[60px] h-[60px]">
+                        <div onmouseenter="handleMouseOver(this)" onmouseleave="handleMouseLeave(this)"
+                            class="bg-white border   flex justify-center items-center rounded-full  am-prev    transition-all duration-300 hover:bg-gold w-[60px] h-[60px]">
 
                             <img data-aos-once="true" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="500"
                                 class=" cursor-pointer hover:opacity-[0.4] transition-all duration-300"
                                 src="./assets/images/svg/arrow-left-hand.svg" alt="">
                         </div>
-                        <div  onmouseenter="handleMouseOver(this)" onmouseleave="handleMouseLeave(this)" class="bg-white border   flex justify-center items-center  am-next rounded-full transition-all duration-300 hover:bg-gold  w-[60px] h-[60px]">
+                        <div onmouseenter="handleMouseOver(this)" onmouseleave="handleMouseLeave(this)"
+                            class="bg-white border   flex justify-center items-center  am-next rounded-full transition-all duration-300 hover:bg-gold  w-[60px] h-[60px]">
                             <img data-aos-once="true" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="500"
                                 class=" cursor-pointer hover:opacity-[0.4] transition-all duration-300"
                                 src="./assets/images/svg/arrow-right-hand.svg" alt="">
@@ -418,7 +440,8 @@
                                 holding company and oneweb sign $200M JV for satellite network</span>
                             <a href='#'
                                 class="text-[15px] relative z-[6] hover:text-[#ebc03f] transition-all duration-300 text-gold tracking-[3px] uppercase">Read
-                                More</a>
+                                More<img src="./assets/images/svg/chevron-right.svg"
+                                    class="chevron-right inline_im mt-[-3px]" /></a>
                         </div>
 
                     </div>
@@ -437,7 +460,8 @@
                                 holding company and oneweb sign $200M JV for satellite network</span>
                             <a href='#'
                                 class="text-[15px] hover:text-[#ebc03f] relative z-[6] transition-all duration-300 text-gold tracking-[3px] uppercase">Read
-                                More</a>
+                                More<img src="./assets/images/svg/chevron-right.svg"
+                                    class="chevron-right inline_im mt-[-3px]" /></a>
                         </div>
 
                     </div>
@@ -456,7 +480,8 @@
                                 holding company and oneweb sign $200M JV for satellite network</span>
                             <a href='#'
                                 class="text-[15px] relative z-[6] hover:text-[#ebc03f] transition-all duration-300 text-gold tracking-[3px] uppercase">Read
-                                More</a>
+                                More<img src="./assets/images/svg/chevron-right.svg"
+                                    class="chevron-right inline_im mt-[-3px]" /></a>
                         </div>
 
                     </div>
@@ -475,7 +500,8 @@
                                 holding company and oneweb sign $200M JV for satellite network</span>
                             <a href='#'
                                 class="text-[15px] hover:text-[#ebc03f] relative z-[6] transition-all duration-300 text-gold tracking-[3px] uppercase">Read
-                                More</a>
+                                More<img src="./assets/images/svg/chevron-right.svg"
+                                    class="chevron-right inline_im mt-[-3px]" /></a>
                         </div>
 
                     </div>
@@ -494,7 +520,8 @@
                                 holding company and oneweb sign $200M JV for satellite network</span>
                             <a href='#'
                                 class="text-[15px] relative z-[6] hover:text-[#ebc03f] transition-all duration-300 text-gold tracking-[3px] uppercase">Read
-                                More</a>
+                                More<img src="./assets/images/svg/chevron-right.svg"
+                                    class="chevron-right inline_im mt-[-3px]" /></a>
                         </div>
 
                     </div>
@@ -513,7 +540,8 @@
                                 holding company and oneweb sign $200M JV for satellite network</span>
                             <a href='#'
                                 class="text-[15px] hover:text-[#ebc03f] relative z-[6] transition-all duration-300 text-gold tracking-[3px] uppercase">Read
-                                More</a>
+                                More<img src="./assets/images/svg/chevron-right.svg"
+                                    class="chevron-right inline_im mt-[-3px]" /></a>
                         </div>
 
                     </div>
@@ -593,9 +621,10 @@
             <li><a href="./engineering.html" class="brown-light hover:text-gold trasition-all duration-300">Engineering
                     and Architecture</a> </li>
             <li><a href="./response.html" class="brown-light hover:text-gold trasition-all duration-300">Response
-                and Resilience</a> </li>
-            <li><a href="./operational.html" class="brown-light hover:text-gold trasition-all duration-300"> Operational Technology</a>
-               </li>
+                    and Resilience</a> </li>
+            <li><a href="./operational.html" class="brown-light hover:text-gold trasition-all duration-300"> Operational
+                    Technology</a>
+            </li>
         </ul>
     </footer>
 
@@ -610,12 +639,12 @@
     <script src="./assets/js/aosinitialize.js"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/slickHome.js"></script>
-    
+
 
     <script src="./assets/js/lottie-player.js"></script>
     <script src="./assets/js/lottie-interactivity.min.js"></script>
     <script src="./assets/js/lottie-home.js"></script>
-  
+
 </body>
 
 </html>
