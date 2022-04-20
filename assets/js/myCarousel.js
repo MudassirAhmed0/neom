@@ -4,6 +4,7 @@ const slide = (slideNum) => {
     const nav = document.querySelector('.slideNav')
     const balls = document.querySelectorAll('.nav-ball')
     const slides = document.querySelectorAll('.slide')
+    clearInterval(myInterval)
     slides.forEach(slide => {
         slide.classList.add('hidden')
         slide.classList.remove('slide-active')
@@ -85,6 +86,12 @@ let start = false
 
 
 let bool = false;
+const myInterval= () => {
+    if (bool == false) {
+        slideNumber = slideNumber !== 4 ? slideNumber + 1 : 1
+        slide()
+    }
+}
 
 const startCarousel = () => {
 
@@ -104,12 +111,7 @@ const startCarousel = () => {
     }
     if (start) {
 
-        setInterval(() => {
-            if (bool == false) {
-                slideNumber = slideNumber !== 4 ? slideNumber + 1 : 1
-                slide()
-            }
-        }, 6000)
+        setInterval(myInterval, 6000)
         window.removeEventListener('scroll', startCarousel)
     }
 
