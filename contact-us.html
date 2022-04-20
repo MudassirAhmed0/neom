@@ -44,11 +44,14 @@
 
     <link rel="stylesheet" href="./assets/styles/global.css">
     <link rel="stylesheet" href="./assets/styles/aos.css">
+    <link rel="stylesheet" href="./assets/styles/contact.css">
 
 
     <script src="./assets/js/tailwind.js"></script>
     <script src="./assets/js/config.js"></script>
 </head>
+
+ 
 
 <body>
     <nav
@@ -132,51 +135,82 @@
     </nav>
 
     <section class="dark-gray min-h-[920px] flex items-end relative">
-        <!-- <div id="googleMap" class="absolute top-0 left-0 w-full h-full"></div> -->
+        <div id="googleMap" class="absolute top-0 left-0 w-full h-full"></div>
         <div class="myContainer py-[220px] text-white">
             <h4 class="text-[40px] uppercase tracking-[8px] leading-[56px] relative">CONTACT US</h4>
             <p class="brown-light text-[20px] leading-[30px] pt-[10px]">Don’t hesitate to contact us for a general
                 inquiry, or
                 reporting cybersecurity issues, and we will be in touch.</p>
             <form class="relative mt-[74px] flex  justify-between gap-y-[55px] flex-wrap w-[59.55%]">
-                <div class="flex flex-col gap-y-[22px] w-[47%]">
+                <div class="flex flex-col gap-y-[22px] w-[47%] relative">
                     <label for="deapartmentName"
                         class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Subject <span
                             class="text-gold brown-light">*</span></label>
-                    <input required type="text" name="deapartmentName" id="deapartmentName"
-                        class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
-                        placeholder="Questioin">
+                    <input type="text" name="deapartmentName" id="deapartmentName" onclick="openQuesDropdown()"
+                        class="text-[18px] brown-light ourline-0 text-[#ffffff80] leading-[20px] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2 focus:border-[#B89535] cursor-pointer"
+                        placeholder="Question" autocomplete="off">
+                    <img src="./assets/images/svg/gray-arrow.svg" id="question_chevron"
+                        class="absolute right-[0] top-[50px]" />
+                    <p class="text-[13px] text-[#bf3c3c] bottom-[-19px] absolute hidden" id="emptySubject">This Field is
+                        required</p>
+                    <div class="quesion-dropdown w-[370px] absolute z-[20] top-[95px] cursor-pointer"
+                        id="quesionDropdown">
+                        <div
+                            class="brown-light text-[18px] leading-[20px] w-[370px] h-[62px] bg-[#FBF8E9] text-[#13100D] py-[20px] px-[24px] hover:bg-[#FBF8E9]">
+                            Question</div>
+                        <div class="brown-light text-[18px] leading-[20px] w-[370px] h-[62px] bg-[#ffffff] text-[#13100D] py-[20px] px-[24px] hover:bg-[#FBF8E9]"
+                            onclick="selectedOption('Report Incident')">
+                            Report Incident</div>
+                        <div class="brown-light text-[18px] leading-[20px] w-[370px] h-[62px] bg-[#ffffff] text-[#13100D] py-[20px] px-[24px] hover:bg-[#FBF8E9]"
+                            onclick="selectedOption('Service Request')">
+                            Service Request</div>
+                        <div class="brown-light text-[18px] leading-[20px] w-[370px] h-[62px] bg-[#ffffff] text-[#13100D] py-[20px] px-[24px] hover:bg-[#FBF8E9]"
+                            onclick="selectedOption('Other')">
+                            Other</div>
+                    </div>
                 </div>
-                <div class="flex flex-col gap-y-[22px] w-[47%]">
+                <div class="flex flex-col gap-y-[22px] w-[47%] relative">
                     <label for="fullName" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Full
                         Name <span class="text-gold brown-light">*</span></label>
-                    <input required type="text" name="fullName" id="fullName"
-                        class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                    <input type="text" name="fullName" id="fullName"
+                        class="text-[18px] brown-light ourline-0 text-[#ffffff80] leading-[20px] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2 focus:border-[#B89535]"
                         placeholder="Ahmad Ali">
+                    <p class="text-[13px] text-[#bf3c3c] bottom-[-19px] absolute hidden" id="emptyName">This Field is
+                        required</p>
                 </div>
-                <div class="flex flex-col gap-y-[22px] w-[47%]">
+                <div class="flex flex-col gap-y-[22px] w-[47%] relative">
                     <label for="mobile" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Mobile
                         <span class="text-gold brown-light">*</span></label>
-                    <input required type="number" name="mobile" id="mobile"
-                        class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                    <input type="number" name="mobile" id="mobile"
+                        class="text-[18px] brown-light ourline-0 text-[#ffffff80] leading-[20px] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2 focus:border-[#B89535]"
                         placeholder="+966 ( 234 446 768 )">
+                    <p class="text-[13px] text-[#bf3c3c] bottom-[-19px] absolute hidden" id="emptyNumber">This Field is
+                        required</p>
+
                 </div>
-                <div class="flex flex-col gap-y-[22px] w-[47%]">
+                <div class="flex flex-col gap-y-[22px] w-[47%] relative">
                     <label for="email" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">Email
                         <span class="text-gold brown-light">*</span></label>
-                    <input required type="text" name="email" id="email"
-                        class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                    <input type="text" name="email" id="email"
+                        class="text-[18px] brown-light ourline-0 text-[#ffffff80] leading-[20px] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2 focus:border-[#B89535]"
                         placeholder="Ahmad@email.com">
+                    <p class="text-[13px] text-[#bf3c3c] bottom-[-19px] absolute hidden" id="emptyEmail">This Field is
+                        required</p>
+
                 </div>
-                <div class="flex flex-col gap-y-[22px] w-[100%]">
+                <div class="flex flex-col gap-y-[22px] w-[100%] relative">
                     <label for="Summary" class="uppercase text-lg leading-[20px] tracking-[3.6px] brown-light">MESSAGE
                         <span class="text-gold brown-light">*</span></label>
-                    <input required type="text" name="Summary" id="Summary"
-                        class="text-[18px] brown-light ourline-0 text-[#ffffff80] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2"
+                    <input type="text" name="Summary" id="Summary"
+                        class="text-[18px] brown-light ourline-0 text-[#ffffff80] leading-[20px] placeholder:text-[#ffffff80] bg-transparent border-b border-[#ffffff80] pb-2 focus:border-[#B89535]"
                         placeholder="">
+                    <p class="text-[13px] text-[#bf3c3c] bottom-[-19px] absolute hidden" id="emptyMessage">This Field is
+                        required</p>
+
                 </div>
                 <button
-                    class="w-[184px] bg-[#b89535] hover:bg-[#ebc03f] text-[15px] uppercase tracking-[3px] transition-all duration-300 h-[53px] rounded-[28px]">
+                    class="w-[184px] bg-[#b89535] hover:bg-[#ebc03f] text-[15px] uppercase tracking-[3px] transition-all duration-300 h-[53px] rounded-[28px]"
+                    onclick="submitForm(event)">
                     Submit
                 </button>
             </form>
@@ -233,15 +267,16 @@
             </li>
         </ul>
     </footer> -->
-
+    
 
     <script src="./assets/js/global.js"></script>
-    <script src="./assets/js/mafp.js">
+    <script src="./assets/js/map.js">
     </script>
 
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpU_U9dBKsILBrm4AQ9tYojZGRMWnXbME&callback=myMap"></script>
-
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI-iRftBdC4ZqL8aRJ-RUQnBN1pz3PCDg&callback=myMap"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/contact.js"></script>
 </body>
 
 </html>

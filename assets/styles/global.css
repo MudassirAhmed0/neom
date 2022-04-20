@@ -399,5 +399,39 @@ background-color: transparent;
     box-shadow: inset 0 0 6px #00000029;
 }
 .shadowApna{
+    
     box-shadow: 0 0 6px #00000029;
 }
+.customScroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.customScroll::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+    
+    border-radius: 10px;
+}
+ 
+.customScroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ebc03f; 
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}
+.customScroll2::-webkit-scrollbar {
+    width: 7px;
+}
+
+.customScroll2::-webkit-scrollbar-track { 
+    background-color: #86878659;
+    border-radius: 3px;
+}
+ 
+.customScroll2::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #B89535; 
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}
+
+
+
+ 

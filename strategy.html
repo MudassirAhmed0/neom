@@ -67,18 +67,60 @@
 
     #cyberRiskTab.tab.active {
         display: flex !important;
-        animation: fade 2.5s;
+        /* animation: fade 2.5s; */
+        animation: fade 0s;
     }
 
     #complianceTab.tab.active {
         display: flex !important;
-        animation: fade 2.5s;
+        /* animation: fade 2.5s; */
+        animation: fade 0s;
     }
 
     #thirdPartyTab.tab.active {
         display: flex !important;
-        animation: fade 2.5s;
+        /* animation: fade 2.5s; */
+        animation: fade 0s;
     }
+
+    #benchmarking_tab_and_content .tab .four-box,
+    #benchmarking_tab_and_content .tab .prot-div {
+        opacity: 0;
+    }
+
+    #benchmarking_tab_and_content .tab.active .four-box,
+    #benchmarking_tab_and_content .tab.active .prot-div {
+        animation: fade4boxes 1s forwards;
+        animation-delay: .5s;
+    }
+
+    @keyframes fade4boxes {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    #benchmarking_tab_and_content .tab .middle-content {
+        opacity: 0;
+    }
+    #benchmarking_tab_and_content .tab.active .middle-content {
+        animation: fadeMiddleContent 1s forwards;
+        /* animation-delay: .3s; */
+    }
+    @keyframes fadeMiddleContent {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
 </style>
 
 
@@ -437,25 +479,25 @@
                         </div>
                         <span class="absolute lottie-dot lottie-dot-1 top-[34px] right-[305px]">
                             <lottie-player src="./assets/json/lf20_d6days9y.json" background="transparent" speed="1"
-                                style="width: 210px; height: 50px;" class="lottilines1" id="lottilines1">
+                                style="width: 210px; height: 50px;" class="lottilines1" a utoplay id="lottilines1">
                             </lottie-player>
 
                         </span>
                         <span class="absolute lottie-dot lottie-dot-2 bottom-[45px] right-[305px]">
                             <lottie-player src="./assets/json/lf20_ms9nhnxa.json" background="transparent" speed="1"
-                                style="width: 210px; height: 50px;" class="lottilines2" id="lottilines2">
+                                style="width: 210px; height: 50px;" class="lottilines2" a utoplay id="lottilines2">
                             </lottie-player>
 
                         </span>
                         <span class="absolute lottie-dot lottie-dot-3 top-[34px] left-[305px]">
                             <lottie-player src="./assets/json/lf20_dwesfhn0.json" background="transparent" speed="1"
-                                style="width: 210px; height: 50px;" class="lottilines3" id="lottilines3">
+                                style="width: 210px; height: 50px;" class="lottilines3" a utoplay id="lottilines3">
                             </lottie-player>
 
                         </span>
                         <span class="absolute lottie-dot  lottie-dot-4 bottom-[45px] left-[305px]">
                             <lottie-player src="./assets/json/lf20_kr2slgxo.json" background="transparent" speed="1"
-                                style="width: 210px; height: 50px;" class="lottilines4" id="lottilines4">
+                                style="width: 210px; height: 50px;" class="lottilines4" a utoplay id="lottilines4">
                             </lottie-player>
 
                         </span>
@@ -489,7 +531,7 @@
 
                                 <div
                                     class="mx-auto my-[15px] max-w-[269px] relativ e h-[262px] flex justify-center items-center">
-                                    <div class="absolute top-[450px]">
+                                    <div class="absolute top-[450px] middle-content">
                                         <img src="./assets/images/svg/assesment-sm.svg" alt="Document Icon"
                                             class="mx-auto">
                                         <h5
@@ -549,7 +591,7 @@
                             </div>
                             <div
                                 class="mx-auto my-[15px] max-w-[269px] relativ e h-[262px] flex justify-center items-center">
-                                <div class="absolute top-[450px]">
+                                <div class="absolute top-[450px] middle-content">
                                     <img src="./assets/images/svg/governance2.svg" alt="Document Icon" class="mx-auto">
                                     <h5
                                         class="brown-regular text-[22px] uppercase leading-[56px] tracking-[4.4px] pt-[8px] text-center mt-[-1px]">
@@ -601,7 +643,7 @@
                             </div>
                             <div
                                 class="mx-auto my-[15px] max-w-[269px] relativ e h-[262px] flex justify-center items-center">
-                                <div class="absolute top-[450px]">
+                                <div class="absolute top-[450px] middle-content">
                                     <img src="./assets/images/svg/operation.svg" alt="Document Icon" class="mx-auto">
                                     <h5
                                         class="brown-regular text-[22px] uppercase leading-[56px] tracking-[4.4px] pt-[8px] text-center">
@@ -1064,7 +1106,7 @@
                     </span> -->
                     </div>
                     <!-- slide 3 -->
-                    <div class="single-slider-item pt-[40px] pb-[13px]  flex  items-center">
+                    <div class="single-slider-item pt-[40px] pb-[13px]  flex  items-center single-slider-item-last">
                         <div class="min-w-[300px]">
                             <div class="mx-auto my-[15px] max-w-[269px] relative">
                                 <img src="./assets/images/svg/circle.svg" />

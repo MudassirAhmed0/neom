@@ -201,6 +201,7 @@
                             manage
                             Cybersecurity risks within NEOM’s environment and with its partners.
                         </p>
+                        <span id="quote_text" class="absolute bottom-[30px]"></span>
                     </div>
                     <!-- <span class="absolute mybrandIcon">
                     <img src="./assets/images/svg/banner-mission.svg" alt="brandIcon">
@@ -219,7 +220,7 @@
             </div>
             <div>
                 <p data-aos-once="true" data-aos="fade" data-aos-delay="500" data-aos-duration="700"
-                    class="text-black text-[28px] leading-[42px]" id="quote_text">
+                    class="text-black text-[28px] leading-[42px]">
                     NEOM will be the most secured <span class="text-gold">humanity centered</span> cognitive region
                     where bold dreams are realised.
                 </p>
@@ -253,7 +254,8 @@
                     cybersecurity program will be fuelled <br> a secure by design approach</p>
             </div>
             <div class="mt-[77px]">
-                <img src="./assets/images/home/neom-shield.png" class="lazy" loading="lazy" alt="Neom Shield">
+                <div id="includedContent"></div>
+                <!-- <img src="./assets/images/home/neom-shield.png" class="lazy" loading="lazy" alt="Neom Shield"> -->
             </div>
         </section>
     </section>
@@ -327,22 +329,22 @@
                 </div>
             </div>
 
-            <span data-aos-once="true" data-aos="fade-up" data-aos-duration="500" onclick="slide(1)"
+            <span data-aos-once="true" data-aos="fade-up" data-aos-duration="500" onclick="slide(1)" onmouseover="stopCarousel()" onmouseleave="startTheCarousel()"
                 class="w-[98px] h-[98px] transition-all cursor-pointer hover:bg-[#9c9b98]  nav-ball duration-500 flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center  rounded-full carouselcircleBlue absolute top-[205px] left-[330px] ">
                 01
             </span>
             <span data-aos-once="true" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500"
-                onclick="slide(2)"
+                onclick="slide(2)" onmouseover="stopCarousel()" onmouseleave="startTheCarousel()"
                 class="w-[98px] h-[98px] transition-all cursor-pointer hover:bg-[#9c9b98] nav-ball duration-300  flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center rounded-full bg-[#bfbdb9]  absolute top-[285px] left-[540px] ">
                 02
             </span>
             <span data-aos-once="true" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500"
-                onclick="slide(3)"
+                onclick="slide(3)" onmouseover="stopCarousel()" onmouseleave="startTheCarousel()"
                 class="w-[98px] h-[98px] transition-all cursor-pointer hover:bg-[#9c9b98] nav-ball duration-300  flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center rounded-full bg-[#bfbdb9] absolute top-[290px] left-[780px] ">
                 03
             </span>
             <span data-aos-once="true" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500"
-                onclick="slide(4)"
+                onclick="slide(4)" onmouseover="stopCarousel()" onmouseleave="startTheCarousel()"
                 class="w-[98px] h-[98px] transition-all cursor-pointer hover:bg-[#9c9b98] nav-ball duration-300  flex justify-center tracking-[3px] text-white text-[42px] brown-light items-center rounded-full bg-[#bfbdb9] absolute top-[205px] right-[330px] ">
                 04
             </span>
@@ -355,16 +357,16 @@
 
             <div class="myCarousel mt-[320px] relative ">
                 <div
-                    class="slide slideOne flex flex-col slide-active transition-all duration-300   items-center text-center">
+                    class="slide slideOne flex flex-col slide-active transition-all duration-300   items-center text-center" onmouseover="stopCarousel()" onmouseleave="startTheCarousel()">
                     <span data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
                         class="text-[28px]">Audacious</span>
                     <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
                         class="mt-[22px] brown-light text-lg leading-[28px] w-1/2 mb-12">Bold enough to broaden
                         imaginations, inspire futuristic ideas, and create a world center for creative people​</span>
                     <img data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
-                        src="./assets/images/home/audacious.svg" class="lazy" loading="lazy" alt="Compelling">
+                        src="./assets/images/home/audacious.svg" class="lazy max-w-[213px] max-h-[203px]" loading="lazy" alt="Compelling">
                 </div>
-                <div class="slide slideTwo flex flex-col hidden transition-all duration-300  items-center text-center">
+                <div class="slide slideTwo flex flex-col hidden transition-all duration-300  items-center text-center" onmouseover="stopCarousel()" onmouseleave="startTheCarousel()">
                     <span data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
                         class="text-[28px]">Compelling</span>
                     <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
@@ -372,10 +374,10 @@
                         memorable, yet capture the essence of the cybersecurity practice; should reflect the common
                         business language</span>
                     <img data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
-                        src="./assets/images/home/compelling.svg" class="lazy" loading="lazy" alt="Compelling">
+                        src="./assets/images/home/compelling.svg" class="lazy max-w-[213px] max-h-[203px]" loading="lazy" alt="Compelling">
                 </div>
                 <div
-                    class="slide slideThree flex flex-col hidden transition-all duration-300  items-center text-center">
+                    class="slide slideThree flex flex-col hidden transition-all duration-300  items-center text-center" onmouseover="stopCarousel()" onmouseleave="startTheCarousel()">
                     <span data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
                         class="text-[28px]">Inspirational</span>
                     <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
@@ -383,9 +385,9 @@
                         master strategy (e.g. NEOM Value Proposition) to inspire a rapidly evolving digital society
                         ​</span>
                     <img data-aos-once="true" data-aos="fade-right" data-aos-duration="700"
-                        src="./assets/images/home/inspirational.png" class="lazy" loading="lazy" alt="Compelling">
+                        src="./assets/images/home/inspirational.png" class="lazy max-w-[213px] max-h-[203px]" loading="lazy" alt="Compelling">
                 </div>
-                <div class="slide slideFour flex flex-col hidden transition-all duration-300  items-center text-center">
+                <div class="slide slideFour flex flex-col hidden transition-all duration-300  items-center text-center" onmouseover="stopCarousel()" onmouseleave="startTheCarousel()">
                     <span data-aos-once="true" data-aos="fade-right" data-aos-duration="700"
                         class="text-[28px]">Actionable</span>
                     <span data-aos-once="true" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700"
@@ -393,7 +395,7 @@
                         translate vision into a working model that drives short & long term success and fosters a
                         future-oriented approach to cybersecurity​</span>
                     <img data-aos-once="true" data-aos="fade-right" data-aos-duration="700"
-                        src="./assets/images/home/actionable.svg" class="lazy" loading="lazy" alt="Compelling">
+                        src="./assets/images/home/actionable.svg" class="lazy max-w-[213px] max-h-[203px]" loading="lazy" alt="Compelling">
                 </div>
             </div>
         </div>
@@ -644,7 +646,11 @@
     <script src="./assets/js/lottie-player.js"></script>
     <script src="./assets/js/lottie-interactivity.min.js"></script>
     <script src="./assets/js/lottie-home.js"></script>
-
+    <script> 
+        $(function(){
+          $("#includedContent").load("neom-shield.html"); 
+        });
+        </script> 
 </body>
 
 </html>
