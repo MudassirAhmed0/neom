@@ -79,14 +79,11 @@ const slide = (slideNum) => {
     }
 }
 
-
-
-
 let start = false
 
-
 let bool = false;
-const myInterval= () => {
+
+const myInterval = () => {
     if (bool == false) {
         slideNumber = slideNumber !== 4 ? slideNumber + 1 : 1
         slide()
@@ -94,12 +91,9 @@ const myInterval= () => {
 }
 
 const startCarousel = () => {
-
     let el = document.querySelector('.myCarousel')
     var rect = el.getBoundingClientRect();
-    // console.log("bool", bool);
     if (bool !== true) {
-        // console.log("bool", bool);
         if (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -114,19 +108,17 @@ const startCarousel = () => {
         setInterval(myInterval, 6000)
         window.removeEventListener('scroll', startCarousel)
     }
-
 }
 
 window.addEventListener('scroll', startCarousel)
 
-
 const stopCarousel = () => {
-    // console.log("bool", bool);
     bool = true;
-    // console.log("bool", bool);
 }
 const startTheCarousel = () => {
-    // console.log("bool", bool);
-    bool = false;
-    // console.log("bool", bool);
+    setTimeout(
+        () => {
+            bool = false;
+        }
+        , 30000)
 }

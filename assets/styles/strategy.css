@@ -33,6 +33,11 @@
     animation: fade .5s;
 }
 
+.governance-model-tab .tab2.active {
+    display: flex !important;
+    animation: fade 1s;
+}
+
 .tabsHeaderButton2 span::before {
     position: absolute;
     content: '';

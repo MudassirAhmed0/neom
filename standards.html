@@ -39,7 +39,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
 
     <meta name="theme-color" content="#0054a6" />
-    <title>Neom  || Industrial Operational Technoloy</title>
+    <title>Neom || Industrial Operational Technoloy</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" href="./assets/styles/global.css">
@@ -51,86 +51,170 @@
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.min.js"></script>
 </head>
 
+<style>
+    @media(min-width: 1600px) {
+        section .canvas-main-div {
+            width: 850px;
+        }
+
+        .canvas-main-div .canvas-sub-div {
+            width: 782px;
+        }
+
+        .canvas-main-div .canvas-elem {
+            width: 782px;
+        }
+        .actions_container {
+            left: 390px !important;
+        }
+    }
+    @media(min-width: 1740px) {
+        section .canvas-main-div {
+            width: 900px;
+        }
+
+        .canvas-main-div .canvas-sub-div {
+            width: 832px;
+        }
+
+        .canvas-main-div .canvas-elem {
+            width: 832px;
+        }
+        .actions_container {
+            left: 410px !important;
+        }
+    }
+    @media(min-width: 1840px) {
+        section .canvas-main-div {
+            width: 950px;
+        }
+
+        .canvas-main-div .canvas-sub-div {
+            width: 882px;
+        }
+
+        .canvas-main-div .canvas-elem {
+            width: 882px;
+        }
+        .actions_container {
+            left: 440px !important;
+        }
+    }
+    @media(min-width: 1930px) {
+        section .canvas-main-div {
+            width: 1000px;
+        }
+
+        .canvas-main-div .canvas-sub-div {
+            width: 932px;
+        }
+
+        .canvas-main-div .canvas-elem {
+            width: 932px;
+        }
+        
+        .actions_container {
+            left: 460px !important;
+        }
+    }
+    @media(min-width: 2020px) {
+        section .canvas-main-div {
+            width: 1080px;
+        }
+
+        .canvas-main-div .canvas-sub-div {
+            width: 1012px;
+        }
+
+        .canvas-main-div .canvas-elem {
+            width: 1012px;
+        }
+        .actions_container {
+            left: 500px !important;
+        }
+    }
+</style>
+
 <body>
     <nav
-    class="left-[50%] z-30 transform text-[15px] brown-light translate-x-[-50%] myContainer flex justify-between absolute top-10 items-center">
-    <div class="w-[237px] h-[78px]">
-        <a href="./">
-            <img src="./assets/images/svg/logo.svg" alt="Neom Logo">
-        </a>
-    </div>
-    <ul class="text-white uppercase  flex gap-x-12">
-        <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
-            <a href="./about.html">
-                About Us
+        class="left-[50%] z-30 transform text-[15px] brown-light translate-x-[-50%] myContainer flex justify-between absolute top-10 items-center">
+        <div class="w-[237px] h-[78px]">
+            <a href="./">
+                <img src="./assets/images/svg/logo.svg" alt="Neom Logo">
             </a>
-        </li>
-        <li onmouseenter="handleDropdownMouseEnter(this)" onmouseleave="handleDropdownMouseLeave(this)"
-            class="relative dropdownBtn ">
-            <span
-                class="cursor-pointer tracking-[3px] flex gap-x-[5px] hover:text-gold transition-all  duration-300">
-                Divisions
-                <img class="relative transition-all duration-300" src='./assets/images/svg/arrow.svg' />
-            </span>
-            <div class="dropdown bachalay">
-                <div
-                    class="px-[28px] pt-[28px] dropdown  w-[549px] overflow-hidden h-[180px] top-10 normal-case transition-all duration-300       tracking-0 absolute left-[-210px] rounded-[15px] flex justify-between  ">
-                    <!-- <div class="img_container absolute top-[-130px] right-[-200px]">
+        </div>
+        <ul class="text-white uppercase  flex gap-x-12">
+            <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
+                <a href="./about.html">
+                    About Us
+                </a>
+            </li>
+            <li onmouseenter="handleDropdownMouseEnter(this)" onmouseleave="handleDropdownMouseLeave(this)"
+                class="relative dropdownBtn ">
+                <span
+                    class="cursor-pointer tracking-[3px] flex gap-x-[5px] hover:text-gold transition-all  duration-300">
+                    Divisions
+                    <img class="relative transition-all duration-300" src='./assets/images/svg/arrow.svg' />
+                </span>
+                <div class="dropdown bachalay">
+                    <div
+                        class="px-[28px] pt-[28px] dropdown  w-[549px] overflow-hidden h-[180px] top-10 normal-case transition-all duration-300       tracking-0 absolute left-[-210px] rounded-[15px] flex justify-between  ">
+                        <!-- <div class="img_container absolute top-[-130px] right-[-200px]">
                 <img src="./assets/images/svg/menu-brand.svg" alt="brandIcon">
             </div> -->
-                    <div class="absolute top-0 right-0 img_container w-[175px]">
-                        <img src="./assets/images/brandicons/navBrand.png" alt="navBrand">
+                        <div class="absolute top-0 right-0 img_container w-[175px]">
+                            <img src="./assets/images/brandicons/navBrand.png" alt="navBrand">
+                        </div>
+                        <ul class="flex flex-col gap-y-[24px]">
+                            <li class="hover:text-gold transition-all duration-300">
+                                <a href="./governance.html" class="brown-light">
+                                    Governance, Risk and Compliance
+                                </a>
+                            </li>
+                            <li class="hover:text-gold transition-all duration-300">
+                                <a href="./engineering.html" class="brown-light">
+                                    Engineering and Architecture
+                                </a>
+                            </li>
+                            <li class="hover:text-gold transition-all duration-300">
+                                <a href="./response.html" class="brown-light">
+                                    Response and Resilience
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="hover:text-gold transition-all duration-300 relative z-5">
+                                <a href="./operational.html" class="brown-light">
+                                    Operational Technology
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="flex flex-col gap-y-[24px]">
-                        <li class="hover:text-gold transition-all duration-300">
-                            <a href="./governance.html" class="brown-light">
-                                Governance, Risk and Compliance
-                            </a>
-                        </li>
-                        <li class="hover:text-gold transition-all duration-300">
-                            <a href="./engineering.html" class="brown-light">
-                                Engineering and Architecture
-                            </a>
-                        </li>
-                        <li class="hover:text-gold transition-all duration-300">
-                            <a href="./response.html" class="brown-light">
-                                Response and Resilience
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="hover:text-gold transition-all duration-300 relative z-5">
-                            <a href="./operational.html" class="brown-light">
-                                Operational Technology
-                            </a>
-                        </li>
-                    </ul>
                 </div>
-            </div>
 
-        </li>
-        <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
-            <a href="./strategy.html">
-                Strategy
-            </a>
-        </li>
-        <li class="hover:text-gold transition-all  text-gold duration-300 tracking-[3px]">
-            <a href="./standards.html">
-                Standards
-            </a>
-        </li>
-        <li class="hover:text-gold  transition-all duration-300 tracking-[3px]">
-            <a href="./news.html">
-                News
-            </a>
-        </li>
-        <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
-            <a href="./contact-us.html">
-                Contact Us
-            </a>
-        </li>
-    </ul>
-</nav>
+            </li>
+            <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
+                <a href="./strategy.html">
+                    Strategy
+                </a>
+            </li>
+            <li class="hover:text-gold transition-all  text-gold duration-300 tracking-[3px]">
+                <a href="./standards.html">
+                    Standards
+                </a>
+            </li>
+            <li class="hover:text-gold  transition-all duration-300 tracking-[3px]">
+                <a href="./news.html">
+                    News
+                </a>
+            </li>
+            <li class="hover:text-gold transition-all duration-300 tracking-[3px]">
+                <a href="./contact-us.html">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
     <section id="firstSection" class="relative min-h-[621px]">
         <div class="w-full h-full absolute top-0 left-0">
 
@@ -141,427 +225,504 @@
 
             </span>
             <span class="absolute top-0 right-0  w-full h-full  z-[4] img_container">
-                <img src="./assets/images/brandicons/heroBINews.png" alt="brandIcon" >
+                <img src="./assets/images/brandicons/heroBINews.png" alt="brandIcon">
             </span>
 
-            
+
 
         </div>
 
 
         <div class="myContainer relative flex flex-col z-[4]  justify-center items-center min-h-[621px] text-white">
             <h1 id="heroHeading" data-aos-once="true" data-aos="fade-up" data-aos-duration="700"
-                class=" text-5xl uppercase w-3/4 text-center leading-[64px] tracking-[9.6px] mt-[110px]">Neom Standards</h1>
+                class=" text-5xl uppercase w-3/4 text-center leading-[64px] tracking-[9.6px] mt-[110px]">Neom Standards
+            </h1>
             <span id="heroText" data-aos-once="true" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700"
                 class="delay-5s text-base w-[50%] mt-6 justify-center brown-light flex gap-x-4 items-center ">
-            <a href="./" class="brown-light text-[#868786]">Home</a> <span class="brown-light text-gold bookmarkDivider"></span> <span class="brown-light text-gold">Standards</span>
-        </span>
+                <a href="./" class="brown-light text-[#868786b3]">Home</a> <span
+                    class="brown-light text-gold bookmarkDivider"></span> <span
+                    class="brown-light text-gold">Standards</span>
+            </span>
         </div>
 
-    </section> 
+    </section>
     <section class="flex h-[707px] overflow-hidden">
         <div class="bg-light w-[35.625%] relative   h-full pt-[87px]">
-            <ul class="max-w-[513px] max-h-[610px] overflow-auto customScroll ml-auto pl-[60px] flex flex-col gap-y-[40px]">
-                <li  id="1" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-gold">
+            <ul
+                class="max-w-[513px] max-h-[610px] overflow-auto scroller customScroll ml-auto pl-[60px] flex flex-col gap-y-[40px]">
+                <li id="1" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-gold">
                     <img class="w-[35.72px] h-[40.82px]" src="./assets/images/png/pdf.png" alt="PDF">
                     Asset Management <br>
                     Standard V1
                 </li>
-                <li  id="2"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="2" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="3"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="3" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Access <br>
                     Control V1
                 </li>
-                <li  id="4" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="4" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Application <br>
-                    Security & Whitelisting  V1
+                    Security & Whitelisting V1
                 </li>
-                <li  id="5" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="5" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Bring Your <br>
                     Own Device V1
                 </li>
-                <li  id="6" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="6" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Business <br>
                     Continuity Standard V1
                 </li>
-                <li  id="7" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="7" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="1" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="1" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px]" src="./assets/images/png/pdf.png" alt="PDF">
                     Asset Management <br>
                     Standard V1
                 </li>
-                <li  id="2"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="2" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="3"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="3" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Access <br>
                     Control V1
                 </li>
-                <li  id="4" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="4" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Application <br>
-                    Security & Whitelisting  V1
+                    Security & Whitelisting V1
                 </li>
-                <li  id="5" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="5" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Bring Your <br>
                     Own Device V1
                 </li>
-                <li  id="6" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="6" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Business <br>
                     Continuity Standard V1
                 </li>
-                <li  id="7" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="7" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="1" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="1" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px]" src="./assets/images/png/pdf.png" alt="PDF">
                     Asset Management <br>
                     Standard V1
                 </li>
-                <li  id="2"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="2" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="3"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="3" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Access <br>
                     Control V1
                 </li>
-                <li  id="4" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="4" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Application <br>
-                    Security & Whitelisting  V1
+                    Security & Whitelisting V1
                 </li>
-                <li  id="5" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="5" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Bring Your <br>
                     Own Device V1
                 </li>
-                <li  id="6" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="6" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Business <br>
                     Continuity Standard V1
                 </li>
-                <li  id="7" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="7" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="1" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="1" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px]" src="./assets/images/png/pdf.png" alt="PDF">
                     Asset Management <br>
                     Standard V1
                 </li>
-                <li  id="2"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="2" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="3"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="3" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Access <br>
                     Control V1
                 </li>
-                <li  id="4" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="4" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Application <br>
-                    Security & Whitelisting  V1
+                    Security & Whitelisting V1
                 </li>
-                <li  id="5" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="5" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Bring Your <br>
                     Own Device V1
                 </li>
-                <li  id="6" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="6" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Business <br>
                     Continuity Standard V1
                 </li>
-                <li  id="7" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="7" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="1" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="1" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px]" src="./assets/images/png/pdf.png" alt="PDF">
                     Asset Management <br>
                     Standard V1
                 </li>
-                <li  id="2"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="2" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="3"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="3" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Access <br>
                     Control V1
                 </li>
-                <li  id="4" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="4" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Application <br>
-                    Security & Whitelisting  V1
+                    Security & Whitelisting V1
                 </li>
-                <li  id="5" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="5" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Bring Your <br>
                     Own Device V1
                 </li>
-                <li  id="6" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="6" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Business <br>
                     Continuity Standard V1
                 </li>
-                <li  id="7" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="7" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="1" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="1" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px]" src="./assets/images/png/pdf.png" alt="PDF">
                     Asset Management <br>
                     Standard V1
                 </li>
-                <li  id="2"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="2" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="3"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="3" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Access <br>
                     Control V1
                 </li>
-                <li  id="4" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="4" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Application <br>
-                    Security & Whitelisting  V1
+                    Security & Whitelisting V1
                 </li>
-                <li  id="5" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="5" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Bring Your <br>
                     Own Device V1
                 </li>
-                <li  id="6" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="6" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Business <br>
                     Continuity Standard V1
                 </li>
-                <li  id="7" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="7" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="1" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="1" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px]" src="./assets/images/png/pdf.png" alt="PDF">
                     Asset Management <br>
                     Standard V1
                 </li>
-                <li  id="2"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="2" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="3"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="3" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Access <br>
                     Control V1
                 </li>
-                <li  id="4" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="4" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Application <br>
-                    Security & Whitelisting  V1
+                    Security & Whitelisting V1
                 </li>
-                <li  id="5" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="5" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Bring Your <br>
                     Own Device V1
                 </li>
-                <li  id="6" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="6" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Business <br>
                     Continuity Standard V1
                 </li>
-                <li  id="7" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="7" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="1" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="1" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px]" src="./assets/images/png/pdf.png" alt="PDF">
                     Asset Management <br>
                     Standard V1
                 </li>
-                <li  id="2"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="2" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="3"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="3" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Access <br>
                     Control V1
                 </li>
-                <li  id="4" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="4" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Application <br>
-                    Security & Whitelisting  V1
+                    Security & Whitelisting V1
                 </li>
-                <li  id="5" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="5" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Bring Your <br>
                     Own Device V1
                 </li>
-                <li  id="6" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="6" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Business <br>
                     Continuity Standard V1
                 </li>
-                <li  id="7" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="7" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="1" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="1" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px]" src="./assets/images/png/pdf.png" alt="PDF">
                     Asset Management <br>
                     Standard V1
                 </li>
-                <li  id="2"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="2" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="3"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="3" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Access <br>
                     Control V1
                 </li>
-                <li  id="4" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="4" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Application <br>
-                    Security & Whitelisting  V1
+                    Security & Whitelisting V1
                 </li>
-                <li  id="5" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="5" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Bring Your <br>
                     Own Device V1
                 </li>
-                <li  id="6" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="6" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Business <br>
                     Continuity Standard V1
                 </li>
-                <li  id="7" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="7" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="1" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="1" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px]" src="./assets/images/png/pdf.png" alt="PDF">
                     Asset Management <br>
                     Standard V1
                 </li>
-                <li  id="2"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="2" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-                <li  id="3"onclick="handlePDF(this)"  class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="3" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Access <br>
                     Control V1
                 </li>
-                <li  id="4" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="4" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Application <br>
-                    Security & Whitelisting  V1
+                    Security & Whitelisting V1
                 </li>
-                <li  id="5" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="5" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Bring Your <br>
                     Own Device V1
                 </li>
-                <li  id="6" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="6" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Business <br>
                     Continuity Standard V1
                 </li>
-                <li  id="7" onclick="handlePDF(this)" class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786]">
+                <li id="7" onclick="handlePDF(this)"
+                    class="flex min-h-[53px] gap-x-5 items-center text-xl leading-[26px] cursor-pointer transition-all duration-300 text-[#868786b3]">
                     <img class="w-[35.72px] h-[40.82px] opacity-[.70]" src="./assets/images/png/pdf.png" alt="PDF">
                     Standard Acceptable <br>
                     Usage V1
                 </li>
-              
+
             </ul>
         </div>
         <div class="w-[64.375%] bg-[#f5f5f5] innerShadow ">
             <div class=" pt-[86px] pr-[123px] relative pl-[120px]">
-                <div class="actions_container bg-black w-[251px] absolute bottom-10 left-[340px] transform z-[5] rounded-[5px] flex items-center ">
+                <div
+                    class="actions_container bg-black w-[251px] absolute bottom-10 left-[340px] transform z-[5] rounded-[5px] flex items-center ">
                     <div class="  gap-x-0.5 flex items-center text-white  py-2 px-4 text-[13px]">
-                        <button  id='prev'class="w-[22px]  h-[23px] bg-[#4D4D4D] rounded-l-[5px]">
-                            <img  class=" mx-auto w-[12px] transform rotate-[180deg]" src="./assets/images/svg/chevron-right-white.svg" alt="">
+                        <button id='prev' class="w-[22px]  h-[23px] bg-[#4D4D4D] rounded-l-[5px]">
+                            <img class=" mx-auto w-[12px] transform rotate-[180deg]"
+                                src="./assets/images/svg/chevron-right-white.svg" alt="">
                         </button>
                         <button id='pageNum' class="w-[44px]  h-[23px]  bg-[#4D4D4D]">
                             1
                         </button>
-                        <button   id='next'class="w-[22px] h-[23px]  bg-[#4D4D4D] rounded-r-[5px]">
-                            <img  class="mx-auto w-[12px]" src="./assets/images/svg/chevron-right-white.svg" alt="">
+                        <button id='next' class="w-[22px] h-[23px]  bg-[#4D4D4D] rounded-r-[5px]">
+                            <img class="mx-auto w-[12px]" src="./assets/images/svg/chevron-right-white.svg" alt="">
                         </button>
                     </div>
-                    <div  class="h-[39px] border-l border-white border-r flex px-4 gap-x-3">
-                     <button id='zoom_out'>
-                         <img src="./assets/images/svg/zoom-out.svg" alt="">
-                     </button>
-                     <button id='zoom_in'>
-                         <img src="./assets/images/svg/zoom-in.svg" alt="">
-                     </button>
+                    <div class="h-[39px] border-l border-white border-r flex px-4 gap-x-3">
+                        <button id='zoom_out'>
+                            <img src="./assets/images/svg/zoom-out.svg" alt="">
+                        </button>
+                        <button id='zoom_in'>
+                            <img src="./assets/images/svg/zoom-in.svg" alt="">
+                        </button>
                     </div>
                     <div class="flex justify-center items-center w-[49px] h-[39px]">
                         <a href="./assets/pdf/1.pdf" download>
                             <img src="./assets/images/svg/download.svg" alt="">
- 
+
                         </a>
                     </div>
-                     
-                 </div>
-                <div class="w-full w-[750px] relative customScroll2 overflow-auto max-h-[621px]">
-                   
-                    <div class="h-[621px]  shadowApna relative bg-white w-full h-full w-[682px]">
-                        
-                        <canvas id="pdf_canvas" width="682">
-    
+
+                </div>
+                <div
+                    class="canvas-main-div w-full w-[750px] relative customScroll2 scroller overflow-auto max-h-[621px]">
+
+                    <div class="canvas-sub-div h-[621px]  shadowApna relative bg-white w-full h-full w-[682px]">
+
+                        <canvas id="pdf_canvas" width="682" class="canvas-elem">
+
                         </canvas>
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
     </section>
- 
 
- <!-- <footer
+
+    <!-- <footer
         class="bg-light  border-t-[6px] text-[19px]  border-gold gap-y-7   text-[18] pt-[53px] pb-[47px] flex flex-col items-center items-center ">
         <ul class="flex  justify-center gap-x-12 opacity-[70%]">
             <li><a href="./about.html" class="brown-light hover:text-gold trasition-all duration-300">About Us</a></li>
@@ -585,30 +746,30 @@
         </ul>
     </footer> -->
     <footer
-    class="bg-light  border-t-[6px] border-gold gap-y-4   text-[18] py-[32px] flex flex-col items-center items-center ">
-    <ul class="flex  justify-center gap-x-12 opacity-[70%]">
-        <li><a href="./about.html" class="brown-light hover:text-gold trasition-all duration-300">About Us</a></li>
-        <li><a href="./strategy.html" class="brown-light hover:text-gold trasition-all duration-300">Strategy</a>
-        </li>
-        <li><a href="./standards.html" class="brown-light hover:text-gold trasition-all duration-300">Standards</a>
-        </li>
-        <li><a href="./news.html" class="brown-light hover:text-gold trasition-all duration-300">News</a></li>
-        <li><a href="./contact-us.html" class="brown-light hover:text-gold trasition-all duration-300">Contact
-                Us</a></li>
-    </ul>
-    <ul class="flex  justify-center gap-x-12 opacity-[70%]">
-        <li><a href="./governance.html" class="brown-light hover:text-gold trasition-all duration-300">Governance,
-                Risk and Compilance</a> </li>
-        <li><a href="./engineering.html" class="brown-light hover:text-gold trasition-all duration-300">Engineering
-                and Architecture</a> </li>
-        <li><a href="./response.html" class="brown-light hover:text-gold trasition-all duration-300">Response and
-                Resilience</a></li>
-        <li><a href="./operational.html" class="brown-light hover:text-gold trasition-all duration-300">Operational
-                Technology</a></li>
-    </ul>
-</footer>
+        class="bg-light  border-t-[6px] border-gold gap-y-4   text-[18] py-[32px] flex flex-col items-center items-center ">
+        <ul class="flex  justify-center gap-x-12 opacity-[70%]">
+            <li><a href="./about.html" class="brown-light hover:text-gold trasition-all duration-300">About Us</a></li>
+            <li><a href="./strategy.html" class="brown-light hover:text-gold trasition-all duration-300">Strategy</a>
+            </li>
+            <li><a href="./standards.html" class="brown-light hover:text-gold trasition-all duration-300">Standards</a>
+            </li>
+            <li><a href="./news.html" class="brown-light hover:text-gold trasition-all duration-300">News</a></li>
+            <li><a href="./contact-us.html" class="brown-light hover:text-gold trasition-all duration-300">Contact
+                    Us</a></li>
+        </ul>
+        <ul class="flex  justify-center gap-x-12 opacity-[70%]">
+            <li><a href="./governance.html" class="brown-light hover:text-gold trasition-all duration-300">Governance,
+                    Risk and Compilance</a> </li>
+            <li><a href="./engineering.html" class="brown-light hover:text-gold trasition-all duration-300">Engineering
+                    and Architecture</a> </li>
+            <li><a href="./response.html" class="brown-light hover:text-gold trasition-all duration-300">Response and
+                    Resilience</a></li>
+            <li><a href="./operational.html" class="brown-light hover:text-gold trasition-all duration-300">Operational
+                    Technology</a></li>
+        </ul>
+    </footer>
     <script src="./assets/js/jquery.min.js"></script>
-    
+
     <script src="./assets/js/global.js"></script>
     <script src="./assets/js/jquery.lazy.min.js"></script>
     <script src="./assets/js/jquery.lazy.plugins.min.js"></script>
@@ -616,9 +777,9 @@
     <script src="./assets/js/lazy.js"></script>
     <script src="./assets/js/aosinitialize.js"></script>
     <script src="./assets/js/division.js"></script>
-     
+
     <script src="./assets/js/pdf.js"></script>
-  
+
 
 </body>
 

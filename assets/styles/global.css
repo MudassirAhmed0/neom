@@ -411,7 +411,6 @@ background-color: transparent;
     
     border-radius: 10px;
 }
- 
 .customScroll::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #ebc03f; 
@@ -431,6 +430,20 @@ background-color: transparent;
     background-color: #B89535; 
     /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
 }
+
+
+.customScroll.scroller {
+    overflow-y: scroll;
+    scrollbar-color: #ebc03f rgba(255, 255, 255, 0);
+    scrollbar-width: thin;
+    border-radius: 10px;
+  }
+  .customScroll2.scroller {
+    overflow-y: scroll;
+    scrollbar-color: #C19333 #86878659;
+    scrollbar-width: thin;
+    /* border-radius: 10px; */
+  }
 
 
 
